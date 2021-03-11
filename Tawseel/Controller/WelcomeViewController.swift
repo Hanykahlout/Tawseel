@@ -8,7 +8,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var skipButton: ButtonDesignable!
     @IBOutlet weak var startNowButton: ButtonDesignable!
@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var pageButton1: UIButton!
     @IBOutlet weak var pageButton2: UIButton!
     @IBOutlet weak var pageButton3: UIButton!
-    
+    var isScrolling = true
     var data = [(image:UIImage,imageHeightConstant:CGFloat,title:String,details:String)]()
     var index = 0
     override func viewDidLoad() {
@@ -61,6 +61,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func startNowAction(_ sender: Any) {
     }
     @IBAction func nextAction(_ sender: Any) {
+        isScrolling = false
         index = (index+1)%3
         collectionView.selectItem(at: IndexPath.init(row: index, section: 0), animated: true, scrollPosition: .centeredHorizontally)
         switch index {
@@ -127,28 +128,30 @@ extension WelcomeViewController: UICollectionViewDelegate , UICollectionViewData
         return 0
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let currentPage = CGFloat(scrollView.contentOffset.x/view.frame.width).rounded()
-        switch currentPage {
-        case 2.0,1.0:
-            startNowButton.isHidden = true
-            nextButton.isHidden = false
-            skipButton.isHidden = false
-            if currentPage == 2{
-                index = 0
-            }else{
-                index = 1
+        if isScrolling {
+            let currentPage = CGFloat(scrollView.contentOffset.x/view.frame.width).rounded()
+            switch currentPage {
+            case 2.0,1.0:
+                startNowButton.isHidden = true
+                nextButton.isHidden = false
+                skipButton.isHidden = false
+                if currentPage == 2{
+                    index = 0
+                }else{
+                    index = 1
+                }
+                changePageControl()
+                break
+            case 0.0:
+                startNowButton.isHidden = false
+                nextButton.isHidden = true
+                skipButton.isHidden = true
+                index = 2
+                changePageControl()
+                break
+            default:
+                break
             }
-            changePageControl()
-            break
-        case 0.0:
-            startNowButton.isHidden = false
-            nextButton.isHidden = true
-            skipButton.isHidden = true
-            index = 2
-            changePageControl()
-            break
-        default:
-            break
         }
     }
 }
