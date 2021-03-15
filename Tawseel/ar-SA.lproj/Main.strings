@@ -1,0 +1,85 @@
+
+/* Class = "UIButton"; normalTitle = "شروط سياسة الخصوصية و الاستخدام"; ObjectID = "1Th-Dm-nqZ"; */
+"1Th-Dm-nqZ.normalTitle" = "شروط سياسة الخصوصية و الاستخدام";
+
+/* Class = "UITextField"; placeholder = "اسم المستخدم"; ObjectID = "1zC-dX-bV8"; */
+"1zC-dX-bV8.placeholder" = "اسم المستخدم";
+
+/* Class = "UILabel"; text = "عند قيامك بتسجيل الدخول , فانك توافق على"; ObjectID = "25m-4G-72g"; */
+"25m-4G-72g.text" = "عند قيامك بتسجيل الدخول , فانك توافق على كافة";
+
+/* Class = "UIButton"; normalTitle = "شروط سياسة الخصوصية و الاستخدام"; ObjectID = "5sc-fu-Zc6"; */
+"5sc-fu-Zc6.normalTitle" = "شروط سياسة الخصوصية و الاستخدام";
+
+/* Class = "UITextField"; placeholder = "اسم المستخدم"; ObjectID = "7K2-ZA-Bz1"; */
+"7K2-ZA-Bz1.placeholder" = "اسم المستخدم";
+
+/* Class = "UITextField"; placeholder = " البريد الالكتروني "; ObjectID = "7z7-HX-M8r"; */
+"7z7-HX-M8r.placeholder" = " البريد الالكتروني ";
+
+/* Class = "UILabel"; text = "!استعادة كلمة المرور"; ObjectID = "BJO-ZH-4Mk"; */
+"BJO-ZH-4Mk.text" = "!استعادة كلمة المرور";
+
+/* Class = "UILabel"; text = "قم بتسجيل حساب جديد من خلال تعبئة البيانات التالية"; ObjectID = "Es3-IU-TdT"; */
+"Es3-IU-TdT.text" = "قم بتسجيل حساب جديد من خلال تعبئة البيانات التالية";
+
+/* Class = "UITextField"; placeholder = " البريد الالكتروني "; ObjectID = "I2p-iW-7aa"; */
+"I2p-iW-7aa.placeholder" = " البريد الالكتروني ";
+
+/* Class = "UIButton"; normalTitle = "شروط سياسة الخصوصية و الاستخدام"; ObjectID = "KZD-l8-ofr"; */
+"KZD-l8-ofr.normalTitle" = "شروط سياسة الخصوصية و الاستخدام";
+
+/* Class = "UILabel"; text = "عضو جديد؟ "; ObjectID = "KuI-DL-0X5"; */
+"KuI-DL-0X5.text" = "عضو جديد؟";
+
+/* Class = "UILabel"; text = "قم بتعبئة اسم المستخدم و البريد الالكتروني لاستعادة كلمة \nالمرور الخاصة بك"; ObjectID = "Lun-E9-Blz"; */
+"Lun-E9-Blz.text" = "قم بتعبئة اسم المستخدم و البريد الالكتروني لاستعادة كلمة \nالمرور الخاصة بك";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور"; ObjectID = "MFy-ZA-fHy"; */
+"MFy-ZA-fHy.placeholder" = "كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "Start Now"; ObjectID = "MXF-h3-EXW"; */
+"MXF-h3-EXW.normalTitle" = "ابدأ الآن";
+
+/* Class = "UILabel"; text = "عند قيامك بتسجيل الدخول , فانك توافق على"; ObjectID = "NWZ-As-un3"; */
+"NWZ-As-un3.text" = "عند قيامك بتسجيل الدخول , فانك توافق على كافة";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور"; ObjectID = "PwC-P1-g0o"; */
+"PwC-P1-g0o.placeholder" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "قم بتسجيل دخول باستخدام اسم المستخدم و كلمة المرور الخاصة بك"; ObjectID = "SB3-8n-Ucz"; */
+"SB3-8n-Ucz.text" = "قم بتسجيل دخول باستخدام اسم المستخدم و كلمة المرور الخاصة بك";
+
+/* Class = "UILabel"; text = "!أهلا بعودتك"; ObjectID = "VtR-QX-tF9"; */
+"VtR-QX-tF9.text" = "!أهلا بعودتك";
+
+/* Class = "UILabel"; text = "مرحباً بانضمامك الينا!"; ObjectID = "Wbh-Ct-fC1"; */
+"Wbh-Ct-fC1.text" = "مرحباً بانضمامك الينا!";
+
+/* Class = "UILabel"; text = "عند قيامك بتسجيل الدخول , فانك توافق على"; ObjectID = "Ze4-s1-jtb"; */
+"Ze4-s1-jtb.text" = "عند قيامك بتسجيل الدخول , فانك توافق على كافة";
+
+/* Class = "UIButton"; normalTitle = "ابدا من هنا"; ObjectID = "cWH-TG-KJc"; */
+"cWH-TG-KJc.normalTitle" = "ابدا من هنا";
+
+/* Class = "UITextField"; placeholder = "اسم المستخدم"; ObjectID = "cZy-yF-TpC"; */
+"cZy-yF-TpC.placeholder" = "اسم المستخدم";
+
+
+/* Class = "UIButton"; normalTitle = "نسيت كلمة المرور؟"; ObjectID = "geK-6n-zAX"; */
+"geK-6n-zAX.normalTitle" = "نسيت كلمة المرور؟";
+
+/* Class = "UILabel"; text = "أو الدخول باستخدام"; ObjectID = "mbN-GI-Yin"; */
+"mbN-GI-Yin.text" = "أو الدخول باستخدام";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "nCE-5t-2mP"; */
+"nCE-5t-2mP.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "oNg-HF-8SG"; */
+"oNg-HF-8SG.normalTitle" = "تخطي";
+
+/* Class = "UILabel"; text = "لديك حساب مسبقاً ؟ "; ObjectID = "rOq-Zq-iXz"; */
+"rOq-Zq-iXz.text" = "لديك حساب مسبقاً ؟ ";
+
+/* Class = "UIButton"; normalTitle = "تسجيل الدخول"; ObjectID = "zOi-Oy-Dec"; */
+"zOi-Oy-Dec.normalTitle" = "تسجيل الدخول";
