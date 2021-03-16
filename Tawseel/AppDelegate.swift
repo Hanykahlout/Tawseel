@@ -6,14 +6,16 @@
 //
 
 import UIKit
-
+import GoogleMaps
+import GooglePlaces
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         L102Localizer.DoTheMagic()
+        GMSServices.provideAPIKey("AIzaSyBd54gighTa1XMemM8G2dDJXN10AxrtDdY")
+        GMSPlacesClient.provideAPIKey("AIzaSyBd54gighTa1XMemM8G2dDJXN10AxrtDdY")
         return true
     }
 

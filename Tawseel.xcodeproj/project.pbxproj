@@ -3,13 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E891784C306062134FA8CDBD /* Pods_Tawseel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */; };
 		FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */; };
 		FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25B25FF198000FBEB36 /* L102Language.swift */; };
 		FA1FC26925FF1B6000FBEB36 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA1FC26B25FF1B6000FBEB36 /* Localizable.strings */; };
+		FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */; };
+		FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2AE260128C500D0B71D /* HomeViewController.swift */; };
+		FA21D2B2260128DE00D0B71D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */; };
+		FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */; };
+		FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B82601290900D0B71D /* InvoicesViewController.swift */; };
+		FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */; };
+		FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C026012BE200D0B71D /*  GraidentButton.swift */; };
+		FA21D2C426012BE200D0B71D /* ViewCusotmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */; };
+		FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C226012BE200D0B71D /* GraidentView.swift */; };
 		FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */; };
 		FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */; };
 		FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */; };
@@ -18,6 +28,8 @@
 		FA498FE625F7CEEE00AFA0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA498FE425F7CEEE00AFA0DF /* Main.storyboard */; };
 		FA498FE825F7CEF000AFA0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA498FE725F7CEF000AFA0DF /* Assets.xcassets */; };
 		FA498FEB25F7CEF000AFA0DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA498FE925F7CEF000AFA0DF /* LaunchScreen.storyboard */; };
+		FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */; };
+		FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A145125FFD403007EB342 /* MapViewController.swift */; };
 		FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */; };
 		FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */; };
 		FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */; };
@@ -39,12 +51,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tawseel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6379DF579AE44732B81A2664 /* Pods-Tawseel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.release.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.release.xcconfig"; sourceTree = "<group>"; };
+		B392E80DF3967D60B6ED1C26 /* Pods-Tawseel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.debug.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.debug.xcconfig"; sourceTree = "<group>"; };
 		FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Localizer.swift; sourceTree = "<group>"; };
 		FA1FC25B25FF198000FBEB36 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		FA1FC25F25FF1A7A00FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
 		FA1FC26025FF1A7A00FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		FA1FC26A25FF1B6000FBEB36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA1FC26D25FF1B6200FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FA21D2AE260128C500D0B71D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		FA21D2B82601290900D0B71D /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
+		FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterMapViewController.swift; sourceTree = "<group>"; };
+		FA21D2C026012BE200D0B71D /*  GraidentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " GraidentButton.swift"; sourceTree = "<group>"; };
+		FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCusotmExtension.swift; sourceTree = "<group>"; };
+		FA21D2C226012BE200D0B71D /* GraidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraidentView.swift; sourceTree = "<group>"; };
 		FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +79,8 @@
 		FA498FE725F7CEF000AFA0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA498FEA25F7CEF000AFA0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA498FEC25F7CEF000AFA0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		FA4A145125FFD403007EB342 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustomCornerRadius.swift; sourceTree = "<group>"; };
@@ -80,12 +106,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E891784C306062134FA8CDBD /* Pods_Tawseel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		339AEA189CDD759048B85A44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B392E80DF3967D60B6ED1C26 /* Pods-Tawseel.debug.xcconfig */,
+				6379DF579AE44732B81A2664 /* Pods-Tawseel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52B5803AE2DF565B55A5789B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA1FC25925FF198000FBEB36 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +139,37 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		FA21D2AA2601283500D0B71D /* TapBarMainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */,
+				FA21D2AE260128C500D0B71D /* HomeViewController.swift */,
+				FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */,
+				FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */,
+				FA21D2B82601290900D0B71D /* InvoicesViewController.swift */,
+				FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */,
+			);
+			path = TapBarMainGroup;
+			sourceTree = "<group>";
+		};
+		FA21D2BF26012BE200D0B71D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA21D2C026012BE200D0B71D /*  GraidentButton.swift */,
+				FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */,
+				FA21D2C226012BE200D0B71D /* GraidentView.swift */,
+			);
+			name = Extension;
+			path = "../../../GymReservations App/GymReservations/GymReservations/Extension";
+			sourceTree = "<group>";
+		};
 		FA498FD225F7CEEE00AFA0DF = {
 			isa = PBXGroup;
 			children = (
 				FA498FDD25F7CEEE00AFA0DF /* Tawseel */,
 				FA498FDC25F7CEEE00AFA0DF /* Products */,
+				339AEA189CDD759048B85A44 /* Pods */,
+				52B5803AE2DF565B55A5789B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +184,7 @@
 		FA498FDD25F7CEEE00AFA0DF /* Tawseel */ = {
 			isa = PBXGroup;
 			children = (
+				FA21D2BF26012BE200D0B71D /* Extension */,
 				FA1FC25925FF198000FBEB36 /* Language */,
 				FAB598E825F93D1A009CEDFB /* Fonts */,
 				FAB598D625F93B94009CEDFB /* Designable */,
@@ -134,11 +205,11 @@
 		FA498FF325F7D0DE00AFA0DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA21D2AA2601283500D0B71D /* TapBarMainGroup */,
+				FA4A144F25FFC614007EB342 /* Auth View Controller */,
 				FA77471325FA6292003BBFE5 /* Cell */,
-				FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */,
-				FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */,
-				FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */,
-				FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */,
+				FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */,
+				FA4A145125FFD403007EB342 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +219,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA4A144F25FFC614007EB342 /* Auth View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */,
+				FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */,
+				FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */,
+				FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */,
+			);
+			path = "Auth View Controller";
 			sourceTree = "<group>";
 		};
 		FA77471325FA6292003BBFE5 /* Cell */ = {
@@ -210,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA498FEF25F7CEF000AFA0DF /* Build configuration list for PBXNativeTarget "Tawseel" */;
 			buildPhases = (
+				B21762BAD3519C917A8CC478 /* [CP] Check Pods Manifest.lock */,
 				FA498FD725F7CEEE00AFA0DF /* Sources */,
 				FA498FD825F7CEEE00AFA0DF /* Frameworks */,
 				FA498FD925F7CEEE00AFA0DF /* Resources */,
+				729A210ACA61CC44EC3CC7DF /* [CP] Copy Pods Resources */,
+				2ADF9B68F9661C2E953432D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +362,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ADF9B68F9661C2E953432D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		729A210ACA61CC44EC3CC7DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tawseel/Pods-Tawseel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21762BAD3519C917A8CC478 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tawseel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA498FD725F7CEEE00AFA0DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,8 +428,16 @@
 			files = (
 				FAB598E125F93B94009CEDFB /* ViewDesignable.swift in Sources */,
 				FAB598E325F93B94009CEDFB /* TextFieldDesignable.swift in Sources */,
+				FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */,
+				FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */,
+				FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */,
+				FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */,
+				FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */,
+				FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */,
 				FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */,
 				FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */,
+				FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */,
+				FA21D2C426012BE200D0B71D /* ViewCusotmExtension.swift in Sources */,
 				FAB598E225F93B94009CEDFB /* ButtonDesignable.swift in Sources */,
 				FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */,
 				FAB598E525F93B94009CEDFB /* UIImageViewDesignable.swift in Sources */,
@@ -297,9 +449,12 @@
 				FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */,
 				FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */,
 				FAB598E625F93B94009CEDFB /* UILabelDesignable.swift in Sources */,
+				FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */,
 				FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */,
+				FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */,
 				FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */,
 				FA498FE125F7CEEE00AFA0DF /* SceneDelegate.swift in Sources */,
+				FA21D2B2260128DE00D0B71D /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +611,7 @@
 		};
 		FA498FF025F7CEF000AFA0DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B392E80DF3967D60B6ED1C26 /* Pods-Tawseel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +631,7 @@
 		};
 		FA498FF125F7CEF000AFA0DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6379DF579AE44732B81A2664 /* Pods-Tawseel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
