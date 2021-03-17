@@ -12,20 +12,22 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: UIView!
     @IBOutlet var loactionLabel: UIView!
     @IBOutlet weak var saveLocationView: ViewDesignable!
-    let locationManager = CLLocationManager()
-    let googleMap = GMSMapView()
-    let marker = GMSMarker()
-    var userLocation:CLLocationCoordinate2D?
+    private let locationManager = CLLocationManager()
+    private let googleMap = GMSMapView()
+    private let marker = GMSMarker()
+    private var userLocation:CLLocationCoordinate2D?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
     }
     
-    func initlization() {
+    private func initlization() {
         checkLocationServices()
         setUpSaveLocationView()
     }
-    func setUpSaveLocationView() {
+    
+    private func setUpSaveLocationView() {
         saveLocationView.layer.cornerRadius = 12
         saveLocationView.clipsToBounds = false
         saveLocationView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.13).cgColor
@@ -33,7 +35,8 @@ class MapViewController: UIViewController {
         saveLocationView.layer.shadowOpacity = 1.0
         saveLocationView.layer.shadowOffset = CGSize(width: 0, height: 3)
     }
-    func checkLocationServices() {
+    
+    private func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled(){
             setupLocationManager()
             locationManager.requestWhenInUseAuthorization()
@@ -42,14 +45,17 @@ class MapViewController: UIViewController {
 //            print("You Don't Make premetion for Location in your device")
         }
     }
-    func setupLocationManager() {
+    
+    private func setupLocationManager() {
         googleMap.delegate = self
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
+    
     @IBAction func saveAction(_ sender: Any) {
 
     }
+    
 }
 extension MapViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -57,7 +63,7 @@ extension MapViewController: CLLocationManagerDelegate{
         showGoogleMap(withCoordinate: location.coordinate)
     }
     
-    func showGoogleMap(withCoordinate coordinate :CLLocationCoordinate2D) {
+    private func showGoogleMap(withCoordinate coordinate :CLLocationCoordinate2D) {
         let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 6)
         googleMap.frame = mapView.bounds
         googleMap.camera = camera

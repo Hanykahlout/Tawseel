@@ -23,7 +23,7 @@ class UserProfileViewController: UIViewController {
         super.viewDidLoad()
         initlization()
     }
-    func initlization() {
+    private func initlization() {
         scrollView.delegate = self
         navigationController?.navigationBar.isHidden = true
         topView.setGradient(firstColor: #colorLiteral(red: 0.9803921569, green: 0.6509803922, blue: 0.1019607843, alpha: 1), secondColor: .black, startPoint: nil, endPoint: nil)
@@ -39,7 +39,7 @@ class UserProfileViewController: UIViewController {
         // register user info process here
         showPopUp()
     }
-    func showPopUp() {
+    private func showPopUp() {
         blackView.isHidden = false
         centerPopUpView.isHidden = false
         blackView.isUserInteractionEnabled = true
@@ -51,7 +51,7 @@ class UserProfileViewController: UIViewController {
         centerPopUpView.isHidden = true
     }
     
-    func selectImageAction() {
+    private func selectImageAction() {
         let alertC = UIAlertController(title: "Select You Choose", message: "Select the image for your profile", preferredStyle: .actionSheet)
         alertC.addAction(.init(title: "Select From Galary", style: .default, handler: { (action) in
             self.setImageBy(source: .photoLibrary)
@@ -70,7 +70,7 @@ class UserProfileViewController: UIViewController {
 }
 
 extension UserProfileViewController : UIImagePickerControllerDelegate , UINavigationControllerDelegate{
-    func setImageBy(source:UIImagePickerController.SourceType){
+    private func setImageBy(source:UIImagePickerController.SourceType){
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
@@ -78,7 +78,7 @@ extension UserProfileViewController : UIImagePickerControllerDelegate , UINaviga
         present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let editingImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             userImageView.image = editingImage

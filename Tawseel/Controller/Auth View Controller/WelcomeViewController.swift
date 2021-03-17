@@ -16,8 +16,9 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var pageButton1: UIButton!
     @IBOutlet weak var pageButton2: UIButton!
     @IBOutlet weak var pageButton3: UIButton!
-    var data = [(image:UIImage,imageHeightConstant:CGFloat,title:String,details:String)]()
-    var index = 0
+    private var data = [(image:UIImage,imageHeightConstant:CGFloat,title:String,details:String)]()
+    private var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
@@ -27,16 +28,19 @@ class WelcomeViewController: UIViewController {
         pageButton2.setImage(UIImage(named: "l2")!, for: .normal)
         pageButton3.setImage(UIImage(named: "l1")!, for: .normal)
     }
-    func initlization() {
+    
+    private func initlization() {
         setUpCollectionView()
         setData()
         setUpButtons()
     }
-    func setUpButtons() {
+    
+    private func setUpButtons() {
         nextButton.setGradient(firstColor: #colorLiteral(red: 0, green: 0.5764705882, blue: 0.6823529412, alpha: 1), secondColor: #colorLiteral(red: 0.04705882353, green: 0.1647058824, blue: 0.3058823529, alpha: 1), startPoint: nil, endPoint: nil)
         startNowButton.setGradient(firstColor: #colorLiteral(red: 0, green: 0.5764705882, blue: 0.6823529412, alpha: 1), secondColor: #colorLiteral(red: 0.04705882353, green: 0.1647058824, blue: 0.3058823529, alpha: 1), startPoint: nil, endPoint: nil)
     }
-    func setData() {
+    
+    private func setData() {
         data.append((image: #imageLiteral(resourceName: "i1"),imageHeightConstant : 195, title: "Ask for the closest", details: """
 Tawseel application helps you to choose the closest marketing personnel to the location of your order by displaying them on the map
 """))
@@ -58,6 +62,7 @@ If you own a car, you can join us and work as a delivery representative within a
     
     @IBAction func startNowAction(_ sender: Any) {
     }
+    
     @IBAction func nextAction(_ sender: Any) {
         index = (index+1)%3
         collectionView.selectItem(at: IndexPath.init(row: index, section: 0), animated: true, scrollPosition: .centeredHorizontally)
@@ -78,7 +83,7 @@ If you own a car, you can join us and work as a delivery representative within a
         changePageControl()
     }
     
-    func changePageControl() {
+    private func changePageControl() {
         switch index {
         case 0:
             pageButton1.setImage(UIImage(named: "l2")!, for: .normal)
@@ -102,7 +107,7 @@ If you own a car, you can join us and work as a delivery representative within a
 }
 
 extension WelcomeViewController: UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
-    func setUpCollectionView()  {
+    private func setUpCollectionView()  {
         collectionView.contentInsetAdjustmentBehavior = .never
         collectionView.delegate = self
         collectionView.dataSource = self

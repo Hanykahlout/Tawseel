@@ -26,7 +26,6 @@ class UIViewCustomCornerRadius: UIView {
     @IBInspectable var topRightCorner: CGFloat = 0
     @IBInspectable var bottomRightCorner: CGFloat = 0
     
-    @IBInspectable var bgColor: UIColor = UIColor.clear
     
     @IBInspectable var flipInRtl: Bool = false
     
@@ -36,7 +35,6 @@ class UIViewCustomCornerRadius: UIView {
         
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
-        self.backgroundColor = bgColor
         
         self.clipsToBounds = true
         

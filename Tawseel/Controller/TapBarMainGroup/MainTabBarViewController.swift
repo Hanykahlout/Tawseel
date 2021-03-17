@@ -6,13 +6,17 @@
 //
 
 import UIKit
-
 class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initlization()
     }
-    
+    private func initlization() {
+        setUpTabBar()
+    }
+    private func setUpTabBar() {
+        navigationController?.navigationBar.isHidden = true
+        selectedIndex = 2
+    }
 }

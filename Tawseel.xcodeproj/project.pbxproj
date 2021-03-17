@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E891784C306062134FA8CDBD /* Pods_Tawseel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */; };
+		FA06D2702602875D0054D0B1 /* ViewCustomExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06D26F2602875D0054D0B1 /* ViewCustomExtension.swift */; };
 		FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */; };
 		FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25B25FF198000FBEB36 /* L102Language.swift */; };
 		FA1FC26925FF1B6000FBEB36 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA1FC26B25FF1B6000FBEB36 /* Localizable.strings */; };
@@ -18,7 +19,6 @@
 		FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B82601290900D0B71D /* InvoicesViewController.swift */; };
 		FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */; };
 		FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C026012BE200D0B71D /*  GraidentButton.swift */; };
-		FA21D2C426012BE200D0B71D /* ViewCusotmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */; };
 		FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C226012BE200D0B71D /* GraidentView.swift */; };
 		FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */; };
 		FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */; };
@@ -54,6 +54,7 @@
 		44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tawseel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6379DF579AE44732B81A2664 /* Pods-Tawseel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.release.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.release.xcconfig"; sourceTree = "<group>"; };
 		B392E80DF3967D60B6ED1C26 /* Pods-Tawseel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.debug.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.debug.xcconfig"; sourceTree = "<group>"; };
+		FA06D26F2602875D0054D0B1 /* ViewCustomExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCustomExtension.swift; sourceTree = "<group>"; };
 		FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Localizer.swift; sourceTree = "<group>"; };
 		FA1FC25B25FF198000FBEB36 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		FA1FC25F25FF1A7A00FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		FA21D2B82601290900D0B71D /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
 		FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterMapViewController.swift; sourceTree = "<group>"; };
 		FA21D2C026012BE200D0B71D /*  GraidentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " GraidentButton.swift"; sourceTree = "<group>"; };
-		FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCusotmExtension.swift; sourceTree = "<group>"; };
 		FA21D2C226012BE200D0B71D /* GraidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraidentView.swift; sourceTree = "<group>"; };
 		FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FA21D2C026012BE200D0B71D /*  GraidentButton.swift */,
-				FA21D2C126012BE200D0B71D /* ViewCusotmExtension.swift */,
+				FA06D26F2602875D0054D0B1 /* ViewCustomExtension.swift */,
 				FA21D2C226012BE200D0B71D /* GraidentView.swift */,
 			);
 			name = Extension;
@@ -437,7 +437,6 @@
 				FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */,
 				FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */,
 				FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */,
-				FA21D2C426012BE200D0B71D /* ViewCusotmExtension.swift in Sources */,
 				FAB598E225F93B94009CEDFB /* ButtonDesignable.swift in Sources */,
 				FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */,
 				FAB598E525F93B94009CEDFB /* UIImageViewDesignable.swift in Sources */,
@@ -450,6 +449,7 @@
 				FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */,
 				FAB598E625F93B94009CEDFB /* UILabelDesignable.swift in Sources */,
 				FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */,
+				FA06D2702602875D0054D0B1 /* ViewCustomExtension.swift in Sources */,
 				FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */,
 				FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */,
 				FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */,
