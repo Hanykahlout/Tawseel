@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 class TextFeildDesignable: UITextField{
     @IBInspectable var borderColor:UIColor = UIColor.clear
     @IBInspectable var borderWidth:CGFloat = 0

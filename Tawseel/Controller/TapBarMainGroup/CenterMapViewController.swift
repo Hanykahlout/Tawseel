@@ -7,14 +7,21 @@
 
 import UIKit
 import GoogleMaps
+import iOSDropDown
 class CenterMapViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var cityDD: DropDown!
+    @IBOutlet weak var locationDD: DropDown!
     @IBOutlet weak var mapView: UIViewCustomCornerRadius!
     @IBOutlet weak var filterView: UIView!
     @IBOutlet weak var busyV: UIView!
     @IBOutlet weak var notAvailableV: UIView!
     @IBOutlet weak var shadowBlackV: UIView!
+    @IBOutlet weak var beyound5Button: UIButton!
+    @IBOutlet weak var closer5Button: UIButton!
+    
+    
     private let locationManager = CLLocationManager()
     private let googleMap = GMSMapView()
     private let marker = GMSMarker()
@@ -25,18 +32,42 @@ class CenterMapViewController: UIViewController {
     }
     
     @IBAction func filterAction(_ sender: Any) {
+        shadowBlackV.isHidden = !shadowBlackV.isHidden
+        filterView.isHidden = !filterView.isHidden
     }
     
     @IBAction func menuAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func beyond5KMAction(_ sender: Any) {
+        beyound5Button.isSelected = !beyound5Button.isSelected
+    }
+    
+    @IBAction func closer5KMAction(_ sender: Any) {
+        closer5Button.isSelected = !closer5Button.isSelected
     }
     
     private func initlization() {
+        setUpDropDownMenu()
         setUpViews()
-        setupLocationManager()
+        checkLocationServices()
         getMarkersData()
     }
     
+    private func setUpDropDownMenu(){
+        let text = try! String(contentsOfFile: Bundle.main.path(forResource: "world-cities", ofType: "txt")!)
+        let lineArray = text.components(separatedBy: "\n")
+        
+        for eachLA in lineArray
+        {
+            let wordArray = eachLA.components(separatedBy: ",")
+            cityDD.optionArray.append(wordArray[0])
+        }
+    }
     private func setUpViews() {
+        shadowBlackV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(setUpBlackView)))
+        shadowBlackV.isUserInteractionEnabled = true
         filterView.layer.masksToBounds = false
         busyV.layer.masksToBounds = false
         notAvailableV.layer.masksToBounds = false
@@ -53,11 +84,51 @@ class CenterMapViewController: UIViewController {
         markers.append(GMSMarker(position: .init(latitude: 52.31417086216214, longitude:  0.7745032757520677)))
     }
     
+    private func checkLocationServices() {
+        if CLLocationManager.locationServicesEnabled(){
+            setupLocationManager()
+            checkLocationAuth(status: locationManager.authorizationStatus)
+        }else{
+            showAlertView(title: "A problem in displaying the map", message: "You don't make premetion for location in your device to open the map")
+        }
+    }
+    
+    private func checkLocationAuth(status:CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        case .denied:
+            showAlertView(title:"You are denied this app to use GPS ", message: "If you want to use the map in this app, you have to change this app's permission in the settings")
+            break
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            break
+        case .restricted:
+            showAlertView(title: "You Don't have permetion for location", message: "You are restricted for access in location")
+            break
+        case .authorizedAlways:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+    
+    private func showAlertView(title:String,message:String){
+        let alertC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertC.addAction(.init(title: "Ok", style: .default, handler: { (action) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        present(alertC, animated: true, completion: nil)
+    }
+    
     private func setupLocationManager() {
-        locationManager.startUpdatingLocation()
-        googleMap.delegate = self
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    @objc private func  setUpBlackView(){
+        shadowBlackV.isHidden = true
+        filterView.isHidden = true
     }
     
 }
@@ -67,6 +138,7 @@ extension CenterMapViewController: CLLocationManagerDelegate {
         guard let location = locations.first else {return}
         showGoogleMap(withCoordinate: location.coordinate)
     }
+    
     private func showGoogleMap(withCoordinate coordinate :CLLocationCoordinate2D) {
         let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 6)
         googleMap.frame = mapView.bounds
@@ -80,8 +152,4 @@ extension CenterMapViewController: CLLocationManagerDelegate {
             m.map = googleMap
         }
     }
-}
-
-extension CenterMapViewController: GMSMapViewDelegate{
-    
 }

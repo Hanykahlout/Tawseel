@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class UILabelDesignable: UILabel {
     
     @IBInspectable var bgColor: UIColor = UIColor.clear

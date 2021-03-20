@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class UIViewCustomCornerRadius: UIView {
     
     private var brdColor: UIColor!

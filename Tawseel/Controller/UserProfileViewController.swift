@@ -8,7 +8,7 @@
 import UIKit
 
 class UserProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var centerPopUpView: ViewDesignable!
@@ -78,7 +78,7 @@ extension UserProfileViewController : UIImagePickerControllerDelegate , UINaviga
         present(imagePicker, animated: true, completion: nil)
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let editingImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             userImageView.image = editingImage

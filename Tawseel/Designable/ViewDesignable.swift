@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 class ViewDesignable: UIView {
   
     @IBInspectable var borderColor:UIColor = UIColor.clear

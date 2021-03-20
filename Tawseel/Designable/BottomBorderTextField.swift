@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class BottomBorderTextField: UITextField {
+class BottomBorderTextField: UITextField {
     
     @IBInspectable var LineColor: UIColor = UIColor.white
     @IBInspectable var LineHeight: CGFloat = 1.0

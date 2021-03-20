@@ -30,6 +30,7 @@
 		FA498FEB25F7CEF000AFA0DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA498FE925F7CEF000AFA0DF /* LaunchScreen.storyboard */; };
 		FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */; };
 		FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A145125FFD403007EB342 /* MapViewController.swift */; };
+		FA66502126050D0D00EF9E2D /* TracingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66502026050D0D00EF9E2D /* TracingViewController.swift */; };
 		FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */; };
 		FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */; };
 		FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */; };
@@ -47,6 +48,9 @@
 		FAB598F525F93D36009CEDFB /* Tajawal-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598EE25F93D36009CEDFB /* Tajawal-ExtraBold.ttf */; };
 		FAB598F625F93D36009CEDFB /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598EF25F93D36009CEDFB /* Tajawal-Regular.ttf */; };
 		FAB598F725F93D36009CEDFB /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */; };
+		FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */; };
+		FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAF50B9B2604D629004556A3 /* world-cities.txt */; };
+		FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */; };
 		FAFD089B25F80B9C0024872B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD089A25F80B9B0024872B /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,7 @@
 		FA498FEC25F7CEF000AFA0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		FA4A145125FFD403007EB342 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA66502026050D0D00EF9E2D /* TracingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingViewController.swift; sourceTree = "<group>"; };
 		FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustomCornerRadius.swift; sourceTree = "<group>"; };
@@ -98,6 +103,9 @@
 		FAB598EE25F93D36009CEDFB /* Tajawal-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraBold.ttf"; sourceTree = "<group>"; };
 		FAB598EF25F93D36009CEDFB /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceInfo.swift; sourceTree = "<group>"; };
+		FAF50B9B2604D629004556A3 /* world-cities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "world-cities.txt"; sourceTree = "<group>"; };
+		FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicationTableViewCell.swift; sourceTree = "<group>"; };
 		FAFD089A25F80B9B0024872B /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +192,7 @@
 		FA498FDD25F7CEEE00AFA0DF /* Tawseel */ = {
 			isa = PBXGroup;
 			children = (
+				FAF50B9B2604D629004556A3 /* world-cities.txt */,
 				FA21D2BF26012BE200D0B71D /* Extension */,
 				FA1FC25925FF198000FBEB36 /* Language */,
 				FAB598E825F93D1A009CEDFB /* Fonts */,
@@ -210,6 +219,7 @@
 				FA77471325FA6292003BBFE5 /* Cell */,
 				FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */,
 				FA4A145125FFD403007EB342 /* MapViewController.swift */,
+				FA66502026050D0D00EF9E2D /* TracingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +227,7 @@
 		FA498FF425F7D0E600AFA0DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */,
+				FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -354,6 +366,7 @@
 				FAB598F425F93D36009CEDFB /* Tajawal-Black.ttf in Resources */,
 				FAB598F225F93D36009CEDFB /* Tajawal-Medium.ttf in Resources */,
 				FAB598F325F93D36009CEDFB /* Tajawal-Light.ttf in Resources */,
+				FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */,
 				FAB598F625F93D36009CEDFB /* Tajawal-Regular.ttf in Resources */,
 				FA498FE625F7CEEE00AFA0DF /* Main.storyboard in Resources */,
 				FAB598F525F93D36009CEDFB /* Tajawal-ExtraBold.ttf in Resources */,
@@ -433,6 +446,7 @@
 				FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */,
 				FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */,
 				FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */,
+				FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */,
 				FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */,
 				FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */,
 				FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */,
@@ -445,6 +459,7 @@
 				FAB598E425F93B94009CEDFB /* IconTextField.swift in Sources */,
 				FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */,
 				FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */,
+				FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */,
 				FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */,
 				FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */,
 				FAB598E625F93B94009CEDFB /* UILabelDesignable.swift in Sources */,
@@ -453,6 +468,7 @@
 				FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */,
 				FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */,
 				FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */,
+				FA66502126050D0D00EF9E2D /* TracingViewController.swift in Sources */,
 				FA498FE125F7CEEE00AFA0DF /* SceneDelegate.swift in Sources */,
 				FA21D2B2260128DE00D0B71D /* MessagesViewController.swift in Sources */,
 			);

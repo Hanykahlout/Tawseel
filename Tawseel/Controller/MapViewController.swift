@@ -39,11 +39,38 @@ class MapViewController: UIViewController {
     private func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled(){
             setupLocationManager()
-            locationManager.requestWhenInUseAuthorization()
-            locationManager.startUpdatingLocation()
+            checkLocationAuth(status: locationManager.authorizationStatus)
         }else{
-//            print("You Don't Make premetion for Location in your device")
+            showAlertView(title: "A problem in displaying the map", message: "You don't make premetion for location in your device to open the map")
         }
+    }
+    
+    private func checkLocationAuth(status:CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        case .denied:
+            showAlertView(title:"You are denied this app to use GPS ", message: "If you want to use the map in this app, you have to change this app's permission in the settings")
+            break
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            break
+        case .restricted:
+            showAlertView(title: "You Don't have permetion for location", message: "You are restricted for access in location")
+            break
+        case .authorizedAlways:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+    
+    private func showAlertView(title:String,message:String){
+        let alertC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertC.addAction(.init(title: "Ok", style: .default, handler: { (action) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        present(alertC, animated: true, completion: nil)
     }
     
     private func setupLocationManager() {
@@ -72,6 +99,7 @@ extension MapViewController: CLLocationManagerDelegate{
         marker.iconView = UIImageView(image: #imageLiteral(resourceName: "userLocationImage"))
         marker.map = googleMap
     }
+    
 }
 
 extension MapViewController:GMSMapViewDelegate{
@@ -79,4 +107,5 @@ extension MapViewController:GMSMapViewDelegate{
         userLocation = coordinate
         marker.position = coordinate
     }
+    
 }

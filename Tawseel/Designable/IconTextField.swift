@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-@IBDesignable class IconTextField: UITextField {
+class IconTextField: UITextField {
     
     @IBInspectable var bottomLineColor: UIColor = UIColor.white
     @IBInspectable var placeholderTextColor: UIColor = UIColor.white

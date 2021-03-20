@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 class ButtonDesignable: UIButton {
     
     @IBInspectable var borderColor:UIColor = UIColor.clear
