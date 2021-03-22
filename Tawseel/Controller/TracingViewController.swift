@@ -28,7 +28,6 @@ class TracingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
-        setInvoicationData()
     }
     
     @IBAction func addRatingAction(_ sender: Any) {
@@ -41,8 +40,10 @@ class TracingViewController: UIViewController {
     }
     
     private func initlization(){
+        setInvoicationData()
         showGoogleMap(fromImage: #imageLiteral(resourceName: "locationImage2"), toImage: #imageLiteral(resourceName: "locationImage2"), currentImage: #imageLiteral(resourceName: "locationIconImage"))
         setUpViews()
+        userRatingCommintTextField.layer.masksToBounds = false
     }
     
     private func setUpViews(){

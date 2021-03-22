@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "k.svg",
+      "filename" : "ic_delete_sweep_24px.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bottomImage@2x.png",
+      "filename" : "ic_delete_sweep_24px@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bottomImage@3x.png",
+      "filename" : "ic_delete_sweep_24px@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

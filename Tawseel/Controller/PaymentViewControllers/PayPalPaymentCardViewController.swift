@@ -1,17 +1,19 @@
 //
-//  MessagesViewController.swift
+//  PayPalPaymentCardViewController.swift
 //  Tawseel
 //
-//  Created by macbook on 16/03/2021.
+//  Created by macbook on 23/03/2021.
 //
 
 import UIKit
 
-class MessagesViewController: UIViewController {
+class PayPalPaymentCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
 
 }

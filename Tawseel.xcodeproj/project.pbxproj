@@ -9,17 +9,27 @@
 /* Begin PBXBuildFile section */
 		E891784C306062134FA8CDBD /* Pods_Tawseel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4E48F3F42386FE1714512 /* Pods_Tawseel.framework */; };
 		FA06D2702602875D0054D0B1 /* ViewCustomExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06D26F2602875D0054D0B1 /* ViewCustomExtension.swift */; };
+		FA075E2F26095DF000F68BAB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA075E2E26095DF000F68BAB /* PaymentViewController.swift */; };
+		FA075E3226095E2300F68BAB /* PaymentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA075E3126095E2300F68BAB /* PaymentCardViewController.swift */; };
+		FA075E3526095E8C00F68BAB /* PayPalPaymentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA075E3426095E8C00F68BAB /* PayPalPaymentCardViewController.swift */; };
 		FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */; };
 		FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FC25B25FF198000FBEB36 /* L102Language.swift */; };
 		FA1FC26925FF1B6000FBEB36 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA1FC26B25FF1B6000FBEB36 /* Localizable.strings */; };
 		FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */; };
 		FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2AE260128C500D0B71D /* HomeViewController.swift */; };
-		FA21D2B2260128DE00D0B71D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */; };
+		FA21D2B2260128DE00D0B71D /* MessagesCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */; };
 		FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */; };
 		FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B82601290900D0B71D /* InvoicesViewController.swift */; };
 		FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */; };
 		FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C026012BE200D0B71D /*  GraidentButton.swift */; };
 		FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C226012BE200D0B71D /* GraidentView.swift */; };
+		FA259B59260916C8005F03E2 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B53260916C7005F03E2 /* Cairo-Regular.ttf */; };
+		FA259B5A260916C8005F03E2 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B54260916C7005F03E2 /* Cairo-SemiBold.ttf */; };
+		FA259B5B260916C8005F03E2 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B55260916C7005F03E2 /* Cairo-ExtraLight.ttf */; };
+		FA259B5C260916C8005F03E2 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B56260916C7005F03E2 /* Cairo-Black.ttf */; };
+		FA259B5D260916C8005F03E2 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B57260916C7005F03E2 /* Cairo-Bold.ttf */; };
+		FA259B5E260916C8005F03E2 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B58260916C8005F03E2 /* Cairo-Light.ttf */; };
+		FA259B612609180C005F03E2 /* MessagesCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */; };
 		FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */; };
 		FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */; };
 		FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */; };
@@ -49,6 +59,11 @@
 		FAB598F625F93D36009CEDFB /* Tajawal-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598EF25F93D36009CEDFB /* Tajawal-Regular.ttf */; };
 		FAB598F725F93D36009CEDFB /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */; };
 		FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */; };
+		FAD1D9EA26091AC20013CF88 /* MessagesCategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */; };
+		FAD1D9ED26092CDD0013CF88 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */; };
+		FAD1D9F026092F700013CF88 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */; };
+		FAD1D9F3260932920013CF88 /* NotificationInfoDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */; };
+		FAD1D9F62609446A0013CF88 /* InvoiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */; };
 		FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAF50B9B2604D629004556A3 /* world-cities.txt */; };
 		FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */; };
 		FAFD089B25F80B9C0024872B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD089A25F80B9B0024872B /* ViewExtension.swift */; };
@@ -59,6 +74,9 @@
 		6379DF579AE44732B81A2664 /* Pods-Tawseel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.release.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.release.xcconfig"; sourceTree = "<group>"; };
 		B392E80DF3967D60B6ED1C26 /* Pods-Tawseel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tawseel.debug.xcconfig"; path = "Target Support Files/Pods-Tawseel/Pods-Tawseel.debug.xcconfig"; sourceTree = "<group>"; };
 		FA06D26F2602875D0054D0B1 /* ViewCustomExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCustomExtension.swift; sourceTree = "<group>"; };
+		FA075E2E26095DF000F68BAB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		FA075E3126095E2300F68BAB /* PaymentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardViewController.swift; sourceTree = "<group>"; };
+		FA075E3426095E8C00F68BAB /* PayPalPaymentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalPaymentCardViewController.swift; sourceTree = "<group>"; };
 		FA1FC25A25FF198000FBEB36 /* L102Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Localizer.swift; sourceTree = "<group>"; };
 		FA1FC25B25FF198000FBEB36 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
 		FA1FC25F25FF1A7A00FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -67,12 +85,19 @@
 		FA1FC26D25FF1B6200FBEB36 /* ar-SA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ar-SA"; path = "ar-SA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FA21D2AE260128C500D0B71D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryViewController.swift; sourceTree = "<group>"; };
 		FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FA21D2B82601290900D0B71D /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
 		FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterMapViewController.swift; sourceTree = "<group>"; };
 		FA21D2C026012BE200D0B71D /*  GraidentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " GraidentButton.swift"; sourceTree = "<group>"; };
 		FA21D2C226012BE200D0B71D /* GraidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraidentView.swift; sourceTree = "<group>"; };
+		FA259B53260916C7005F03E2 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		FA259B54260916C7005F03E2 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA259B55260916C7005F03E2 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FA259B56260916C7005F03E2 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		FA259B57260916C7005F03E2 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		FA259B58260916C8005F03E2 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +129,11 @@
 		FAB598EF25F93D36009CEDFB /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
 		FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceInfo.swift; sourceTree = "<group>"; };
+		FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryInfo.swift; sourceTree = "<group>"; };
+		FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfo.swift; sourceTree = "<group>"; };
+		FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfoDate.swift; sourceTree = "<group>"; };
+		FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDetailsViewController.swift; sourceTree = "<group>"; };
 		FAF50B9B2604D629004556A3 /* world-cities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "world-cities.txt"; sourceTree = "<group>"; };
 		FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicationTableViewCell.swift; sourceTree = "<group>"; };
 		FAFD089A25F80B9B0024872B /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -138,6 +168,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA075E3726095E9200F68BAB /* PaymentViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA075E2E26095DF000F68BAB /* PaymentViewController.swift */,
+				FA075E3126095E2300F68BAB /* PaymentCardViewController.swift */,
+				FA075E3426095E8C00F68BAB /* PayPalPaymentCardViewController.swift */,
+			);
+			path = PaymentViewControllers;
+			sourceTree = "<group>";
+		};
 		FA1FC25925FF198000FBEB36 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +192,7 @@
 			children = (
 				FA21D2AB2601288F00D0B71D /* MainTabBarViewController.swift */,
 				FA21D2AE260128C500D0B71D /* HomeViewController.swift */,
-				FA21D2B1260128DE00D0B71D /* MessagesViewController.swift */,
+				FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */,
 				FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */,
 				FA21D2B82601290900D0B71D /* InvoicesViewController.swift */,
 				FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */,
@@ -169,6 +209,19 @@
 			);
 			name = Extension;
 			path = "../../../GymReservations App/GymReservations/GymReservations/Extension";
+			sourceTree = "<group>";
+		};
+		FA259B52260916B6005F03E2 /* Cairo */ = {
+			isa = PBXGroup;
+			children = (
+				FA259B56260916C7005F03E2 /* Cairo-Black.ttf */,
+				FA259B57260916C7005F03E2 /* Cairo-Bold.ttf */,
+				FA259B55260916C7005F03E2 /* Cairo-ExtraLight.ttf */,
+				FA259B58260916C8005F03E2 /* Cairo-Light.ttf */,
+				FA259B53260916C7005F03E2 /* Cairo-Regular.ttf */,
+				FA259B54260916C7005F03E2 /* Cairo-SemiBold.ttf */,
+			);
+			path = Cairo;
 			sourceTree = "<group>";
 		};
 		FA498FD225F7CEEE00AFA0DF = {
@@ -214,12 +267,14 @@
 		FA498FF325F7D0DE00AFA0DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA21D2AA2601283500D0B71D /* TapBarMainGroup */,
 				FA4A144F25FFC614007EB342 /* Auth View Controller */,
+				FA21D2AA2601283500D0B71D /* TapBarMainGroup */,
+				FA075E3726095E9200F68BAB /* PaymentViewControllers */,
 				FA77471325FA6292003BBFE5 /* Cell */,
 				FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */,
 				FA4A145125FFD403007EB342 /* MapViewController.swift */,
 				FA66502026050D0D00EF9E2D /* TracingViewController.swift */,
+				FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +283,9 @@
 			isa = PBXGroup;
 			children = (
 				FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */,
+				FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */,
+				FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */,
+				FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +306,8 @@
 			children = (
 				FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */,
 				FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */,
+				FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */,
+				FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -270,6 +330,7 @@
 		FAB598E825F93D1A009CEDFB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FA259B52260916B6005F03E2 /* Cairo */,
 				FAB598E925F93D21009CEDFB /* Tajawal */,
 			);
 			path = Fonts;
@@ -359,16 +420,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA498FEB25F7CEF000AFA0DF /* LaunchScreen.storyboard in Resources */,
+				FA259B5B260916C8005F03E2 /* Cairo-ExtraLight.ttf in Resources */,
 				FA498FE825F7CEF000AFA0DF /* Assets.xcassets in Resources */,
+				FA259B5C260916C8005F03E2 /* Cairo-Black.ttf in Resources */,
 				FA1FC26925FF1B6000FBEB36 /* Localizable.strings in Resources */,
 				FAB598F125F93D36009CEDFB /* Tajawal-Bold.ttf in Resources */,
 				FAB598F725F93D36009CEDFB /* Tajawal-ExtraLight.ttf in Resources */,
+				FA259B5D260916C8005F03E2 /* Cairo-Bold.ttf in Resources */,
 				FAB598F425F93D36009CEDFB /* Tajawal-Black.ttf in Resources */,
+				FA259B5A260916C8005F03E2 /* Cairo-SemiBold.ttf in Resources */,
 				FAB598F225F93D36009CEDFB /* Tajawal-Medium.ttf in Resources */,
 				FAB598F325F93D36009CEDFB /* Tajawal-Light.ttf in Resources */,
+				FA259B59260916C8005F03E2 /* Cairo-Regular.ttf in Resources */,
 				FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */,
 				FAB598F625F93D36009CEDFB /* Tajawal-Regular.ttf in Resources */,
 				FA498FE625F7CEEE00AFA0DF /* Main.storyboard in Resources */,
+				FA259B5E260916C8005F03E2 /* Cairo-Light.ttf in Resources */,
 				FAB598F525F93D36009CEDFB /* Tajawal-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,12 +506,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD1D9F026092F700013CF88 /* NotificationTableViewCell.swift in Sources */,
+				FA075E2F26095DF000F68BAB /* PaymentViewController.swift in Sources */,
+				FA075E3526095E8C00F68BAB /* PayPalPaymentCardViewController.swift in Sources */,
 				FAB598E125F93B94009CEDFB /* ViewDesignable.swift in Sources */,
+				FA259B612609180C005F03E2 /* MessagesCategoryTableViewCell.swift in Sources */,
 				FAB598E325F93B94009CEDFB /* TextFieldDesignable.swift in Sources */,
 				FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */,
 				FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */,
+				FAD1D9EA26091AC20013CF88 /* MessagesCategoryInfo.swift in Sources */,
 				FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */,
 				FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */,
+				FAD1D9F62609446A0013CF88 /* InvoiceDetailsViewController.swift in Sources */,
 				FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */,
 				FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */,
 				FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */,
@@ -456,9 +529,12 @@
 				FAB598E525F93B94009CEDFB /* UIImageViewDesignable.swift in Sources */,
 				FA498FDF25F7CEEE00AFA0DF /* AppDelegate.swift in Sources */,
 				FAFD089B25F80B9C0024872B /* ViewExtension.swift in Sources */,
+				FAD1D9F3260932920013CF88 /* NotificationInfoDate.swift in Sources */,
 				FAB598E425F93B94009CEDFB /* IconTextField.swift in Sources */,
 				FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */,
+				FA075E3226095E2300F68BAB /* PaymentCardViewController.swift in Sources */,
 				FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */,
+				FAD1D9ED26092CDD0013CF88 /* NotificationInfo.swift in Sources */,
 				FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */,
 				FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */,
 				FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */,
@@ -470,7 +546,7 @@
 				FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */,
 				FA66502126050D0D00EF9E2D /* TracingViewController.swift in Sources */,
 				FA498FE125F7CEEE00AFA0DF /* SceneDelegate.swift in Sources */,
-				FA21D2B2260128DE00D0B71D /* MessagesViewController.swift in Sources */,
+				FA21D2B2260128DE00D0B71D /* MessagesCategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
