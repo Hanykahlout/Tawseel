@@ -37,6 +37,14 @@ class InvoiceDetailsViewController: UIViewController {
         paymentPopupView.isHidden = false
     }
     
+    @IBAction func cashAction(_ sender: Any) {
+    }
+    
+    @IBAction func bankAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     private func initlization(){
         shadowBlackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backFromPopup)))
         shadowBlackView.isUserInteractionEnabled = true

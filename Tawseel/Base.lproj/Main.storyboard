@@ -1342,6 +1342,9 @@
                                                                         <real key="value" value="12"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="cashAction:" destination="K79-bt-pPI" eventType="touchUpInside" id="obw-ok-cwP"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpW-KN-rFa">
                                                                 <rect key="frame" x="188" y="0.0" width="160" height="45"/>
@@ -1357,6 +1360,9 @@
                                                                         <real key="value" value="12"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="bankAction:" destination="K79-bt-pPI" eventType="touchUpInside" id="9Mx-bR-0Qq"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1442,10 +1448,10 @@
             </objects>
             <point key="canvasLocation" x="3657.971014492754" y="3739.6205357142853"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="ozO-X4-ffz">
             <objects>
-                <viewController id="c2v-Tg-x05" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentViewController" id="c2v-Tg-x05" customClass="PaymentViewController" customModule="Tawseel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sag-GS-mwC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1464,6 +1470,7 @@
                                         </constraints>
                                         <state key="normal" image="ic_menu_24px"/>
                                         <connections>
+                                            <action selector="sideMenuAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="hDG-vL-OzP"/>
                                             <action selector="sideMenuAction:" destination="e71-2P-Hy4" eventType="touchUpInside" id="zLx-ZK-Tfh"/>
                                         </connections>
                                     </button>
@@ -1480,6 +1487,9 @@
                                             <constraint firstAttribute="width" constant="44" id="aFn-67-CZV"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="PCB-du-CiP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.047058823530000002" green="0.1647058824" blue="0.30588235289999999" alpha="1" colorSpace="deviceRGB"/>
@@ -1504,19 +1514,279 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the electronic payment mechanism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sts-dJ-uR8">
+                                <rect key="frame" x="16" y="174" width="335" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visaCard" translatesAutoresizingMaskIntoConstraints="NO" id="1at-IK-b9r">
+                                <rect key="frame" x="16" y="220" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="jik-xY-9pB"/>
+                                    <constraint firstAttribute="height" constant="56" id="qaL-6l-UYM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yQ-QQ-GVx">
+                                <rect key="frame" x="85" y="239" width="71.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqm-mg-AfB">
+                                <rect key="frame" x="376" y="237" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="visaCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="N6j-JK-p0x"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7n-BA-uBs">
+                                <rect key="frame" x="16" y="276" width="382" height="0.5"/>
+                                <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="dae-PP-nfn"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paypalCard" translatesAutoresizingMaskIntoConstraints="NO" id="yk2-cF-tg9">
+                                <rect key="frame" x="16" y="388.5" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="IZv-4h-yS3"/>
+                                    <constraint firstAttribute="height" constant="56" id="J5p-fW-aPA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PatPalCard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adI-ga-YRI">
+                                <rect key="frame" x="85" y="407.5" width="83.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GM-hO-aW9">
+                                <rect key="frame" x="376" y="405.5" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="payPalCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="BoN-0j-256"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVH-DL-VGt">
+                                <rect key="frame" x="16" y="444.5" width="382" height="0.0"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="3xn-bD-5pw"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madaCard" translatesAutoresizingMaskIntoConstraints="NO" id="xQV-ZE-0We">
+                                <rect key="frame" x="16" y="332.5" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="B91-OS-Rj5"/>
+                                    <constraint firstAttribute="height" constant="56" id="tOx-II-0o3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mada Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ib-hE-FVI">
+                                <rect key="frame" x="85" y="351.5" width="82.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd1-XY-MZq">
+                                <rect key="frame" x="376" y="349.5" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="madaCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="iIx-BO-3Rj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTT-7Z-pyN">
+                                <rect key="frame" x="16" y="388.5" width="382" height="0.0"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="VzS-yE-sga"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCard" translatesAutoresizingMaskIntoConstraints="NO" id="yXz-K0-2Jg">
+                                <rect key="frame" x="16" y="276.5" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="hBl-rx-MJh"/>
+                                    <constraint firstAttribute="height" constant="56" id="pV7-go-RmW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG0-3o-z7r">
+                                <rect key="frame" x="85" y="295.5" width="94.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-SA-uYL">
+                                <rect key="frame" x="376" y="293.5" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="masterCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="CbP-zB-CH9"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jON-a5-sLN">
+                                <rect key="frame" x="16" y="332.5" width="382" height="0.0"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="FW2-Lt-szD"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleCard" translatesAutoresizingMaskIntoConstraints="NO" id="I5j-QR-1n1">
+                                <rect key="frame" x="16" y="444.5" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="TNd-DL-fqv"/>
+                                    <constraint firstAttribute="width" constant="56" id="kU6-x9-Dc2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Pay Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69O-Oi-GSw">
+                                <rect key="frame" x="85" y="463.5" width="114.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiR-Wo-nFG">
+                                <rect key="frame" x="376" y="461.5" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="applePayCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="hrH-Fq-QeZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKj-11-n0Y">
+                                <rect key="frame" x="16" y="500.5" width="382" height="0.0"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="dyO-s4-zBb"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STCPayCard" translatesAutoresizingMaskIntoConstraints="NO" id="ca0-T8-4RL">
+                                <rect key="frame" x="16" y="500.5" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="HCH-Zz-uXX"/>
+                                    <constraint firstAttribute="width" constant="56" id="krE-1y-cjh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STC Pay Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-Ur-yxx">
+                                <rect key="frame" x="85" y="519.5" width="100" height="18"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rU-pz-ibU">
+                                <rect key="frame" x="376" y="517.5" width="22" height="22"/>
+                                <state key="normal" image="unSelectedOne"/>
+                                <state key="selected" image="selectedOne"/>
+                                <connections>
+                                    <action selector="STCPayCardRadioButtonAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="0Sv-AT-3eO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-Cf-HiY">
+                                <rect key="frame" x="16" y="556.5" width="382" height="0.0"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.25" id="gWU-LO-iFi"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-Yv-btn">
+                                <rect key="frame" x="125.5" y="669" width="163" height="60"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.65098039215686276" blue="0.10196078431372549" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3JO-Fj-bUf"/>
+                                    <constraint firstAttribute="width" constant="163" id="Qfz-YB-Iw2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner_radius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addAction:" destination="c2v-Tg-x05" eventType="touchUpInside" id="RYS-3S-FlU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cQE-8Q-cOk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstItem="kqm-mg-AfB" firstAttribute="centerY" secondItem="1yQ-QQ-GVx" secondAttribute="centerY" id="1Re-TX-8ht"/>
+                            <constraint firstItem="7pb-Yv-btn" firstAttribute="centerX" secondItem="sag-GS-mwC" secondAttribute="centerX" id="1uR-j4-Xdi"/>
+                            <constraint firstAttribute="trailing" secondItem="MWt-Cf-HiY" secondAttribute="trailing" constant="16" id="1vL-3c-acX"/>
+                            <constraint firstItem="MWt-Cf-HiY" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="3NS-vS-w3p"/>
+                            <constraint firstItem="8Ib-hE-FVI" firstAttribute="centerY" secondItem="xQV-ZE-0We" secondAttribute="centerY" id="4M8-GT-Ilw"/>
+                            <constraint firstItem="wVH-DL-VGt" firstAttribute="top" secondItem="yk2-cF-tg9" secondAttribute="bottom" id="4XN-sG-8R0"/>
+                            <constraint firstItem="jON-a5-sLN" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="5zU-bw-nW7"/>
+                            <constraint firstItem="yXz-K0-2Jg" firstAttribute="top" secondItem="u7n-BA-uBs" secondAttribute="bottom" id="6LM-xW-dcc"/>
+                            <constraint firstItem="9GM-hO-aW9" firstAttribute="centerY" secondItem="adI-ga-YRI" secondAttribute="centerY" id="7VC-lX-fO6"/>
+                            <constraint firstItem="u7n-BA-uBs" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="8ml-rZ-KZ3"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="9GM-hO-aW9" secondAttribute="trailing" constant="16" id="9jI-hH-KeI"/>
+                            <constraint firstItem="jON-a5-sLN" firstAttribute="top" secondItem="yXz-K0-2Jg" secondAttribute="bottom" id="BaP-F3-Ipq"/>
+                            <constraint firstAttribute="trailing" secondItem="AKj-11-n0Y" secondAttribute="trailing" constant="16" id="EDR-9e-YpG"/>
+                            <constraint firstItem="adI-ga-YRI" firstAttribute="leading" secondItem="yk2-cF-tg9" secondAttribute="trailing" constant="13" id="Eog-VT-2BW"/>
+                            <constraint firstItem="xQV-ZE-0We" firstAttribute="top" secondItem="yXz-K0-2Jg" secondAttribute="bottom" id="GM3-KD-7Pn"/>
+                            <constraint firstItem="9rU-pz-ibU" firstAttribute="centerY" secondItem="jTs-Ur-yxx" secondAttribute="centerY" id="GdI-Sj-MS3"/>
+                            <constraint firstItem="AKj-11-n0Y" firstAttribute="top" secondItem="I5j-QR-1n1" secondAttribute="bottom" id="IRl-m3-zwR"/>
+                            <constraint firstItem="adI-ga-YRI" firstAttribute="centerY" secondItem="yk2-cF-tg9" secondAttribute="centerY" id="JLe-6c-yp8"/>
+                            <constraint firstItem="wVH-DL-VGt" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="KBd-Yo-GW9"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="kqm-mg-AfB" secondAttribute="trailing" constant="16" id="MSd-jI-YXp"/>
+                            <constraint firstItem="1yQ-QQ-GVx" firstAttribute="leading" secondItem="1at-IK-b9r" secondAttribute="trailing" constant="13" id="MzW-Qu-Erv"/>
+                            <constraint firstItem="kTT-7Z-pyN" firstAttribute="top" secondItem="xQV-ZE-0We" secondAttribute="bottom" id="NIL-ux-QL3"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="u7n-BA-uBs" secondAttribute="trailing" constant="16" id="OcO-Px-AVr"/>
+                            <constraint firstItem="7pb-Yv-btn" firstAttribute="top" secondItem="MWt-Cf-HiY" secondAttribute="bottom" constant="112.5" id="Q3t-rz-6YI"/>
+                            <constraint firstItem="zd1-XY-MZq" firstAttribute="centerY" secondItem="8Ib-hE-FVI" secondAttribute="centerY" id="QFH-di-q53"/>
+                            <constraint firstItem="ca0-T8-4RL" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="QaT-Dd-hGM"/>
+                            <constraint firstItem="69O-Oi-GSw" firstAttribute="centerY" secondItem="I5j-QR-1n1" secondAttribute="centerY" id="SB9-6i-DGk"/>
+                            <constraint firstItem="yk2-cF-tg9" firstAttribute="top" secondItem="xQV-ZE-0We" secondAttribute="bottom" id="SoY-Ft-TzY"/>
+                            <constraint firstItem="yXz-K0-2Jg" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="TXv-e4-0Dc"/>
+                            <constraint firstItem="yk2-cF-tg9" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="UWY-Yt-g8W"/>
+                            <constraint firstItem="KiR-Wo-nFG" firstAttribute="centerY" secondItem="69O-Oi-GSw" secondAttribute="centerY" id="VbP-Ax-n0E"/>
+                            <constraint firstItem="jTs-Ur-yxx" firstAttribute="leading" secondItem="ca0-T8-4RL" secondAttribute="trailing" constant="13" id="VfK-EA-6i7"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="9rU-pz-ibU" secondAttribute="trailing" constant="16" id="XGB-9m-OAE"/>
+                            <constraint firstItem="kTT-7Z-pyN" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="Y7x-eK-ULf"/>
+                            <constraint firstItem="xQV-ZE-0We" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="a82-sH-R20"/>
+                            <constraint firstAttribute="trailing" secondItem="wVH-DL-VGt" secondAttribute="trailing" constant="16" id="b4r-jG-VSI"/>
+                            <constraint firstItem="1yQ-QQ-GVx" firstAttribute="centerY" secondItem="1at-IK-b9r" secondAttribute="centerY" id="bTa-iR-xpi"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="zd1-XY-MZq" secondAttribute="trailing" constant="16" id="bsp-HJ-UTR"/>
+                            <constraint firstItem="jTs-Ur-yxx" firstAttribute="centerY" secondItem="ca0-T8-4RL" secondAttribute="centerY" id="c7d-rk-adJ"/>
                             <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="ICN-dQ-sZ4" secondAttribute="trailing" id="etI-2a-h7g"/>
+                            <constraint firstItem="69O-Oi-GSw" firstAttribute="leading" secondItem="I5j-QR-1n1" secondAttribute="trailing" constant="13" id="fbM-AO-Lvx"/>
+                            <constraint firstItem="I5j-QR-1n1" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="gEy-3J-ZJv"/>
+                            <constraint firstItem="u7n-BA-uBs" firstAttribute="top" secondItem="1at-IK-b9r" secondAttribute="bottom" id="gjj-hy-3CP"/>
+                            <constraint firstItem="fG0-3o-z7r" firstAttribute="leading" secondItem="yXz-K0-2Jg" secondAttribute="trailing" constant="13" id="gxB-2c-zsd"/>
+                            <constraint firstAttribute="trailing" secondItem="kTT-7Z-pyN" secondAttribute="trailing" constant="16" id="iMi-PF-S1x"/>
+                            <constraint firstItem="MWt-Cf-HiY" firstAttribute="top" secondItem="ca0-T8-4RL" secondAttribute="bottom" id="kC8-D6-t6r"/>
+                            <constraint firstItem="Sts-dJ-uR8" firstAttribute="top" secondItem="ICN-dQ-sZ4" secondAttribute="bottom" constant="36" id="lwV-3h-dWx"/>
+                            <constraint firstItem="9x0-SA-uYL" firstAttribute="centerY" secondItem="fG0-3o-z7r" secondAttribute="centerY" id="mLf-gU-3vg"/>
+                            <constraint firstItem="AKj-11-n0Y" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" constant="16" id="mfq-rs-5EM"/>
+                            <constraint firstItem="8Ib-hE-FVI" firstAttribute="leading" secondItem="xQV-ZE-0We" secondAttribute="trailing" constant="13" id="nsg-oQ-jnF"/>
+                            <constraint firstItem="1at-IK-b9r" firstAttribute="top" secondItem="Sts-dJ-uR8" secondAttribute="bottom" constant="28" id="ok8-Az-Exc"/>
+                            <constraint firstAttribute="trailing" secondItem="jON-a5-sLN" secondAttribute="trailing" constant="16" id="ovw-oJ-m6Q"/>
+                            <constraint firstItem="Sts-dJ-uR8" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="pAg-BR-h3c"/>
+                            <constraint firstItem="ca0-T8-4RL" firstAttribute="top" secondItem="I5j-QR-1n1" secondAttribute="bottom" id="pIu-PB-tuo"/>
+                            <constraint firstItem="1at-IK-b9r" firstAttribute="leading" secondItem="cQE-8Q-cOk" secondAttribute="leading" constant="16" id="rOO-qu-v1k"/>
+                            <constraint firstItem="I5j-QR-1n1" firstAttribute="top" secondItem="yk2-cF-tg9" secondAttribute="bottom" id="sWR-1b-aLx"/>
                             <constraint firstItem="ICN-dQ-sZ4" firstAttribute="leading" secondItem="sag-GS-mwC" secondAttribute="leading" id="swy-Te-x9p"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="KiR-Wo-nFG" secondAttribute="trailing" constant="16" id="tVY-Xf-UnI"/>
                             <constraint firstItem="ICN-dQ-sZ4" firstAttribute="top" secondItem="sag-GS-mwC" secondAttribute="top" id="uHu-AH-iog"/>
+                            <constraint firstItem="fG0-3o-z7r" firstAttribute="centerY" secondItem="yXz-K0-2Jg" secondAttribute="centerY" id="uLC-Oe-psI"/>
+                            <constraint firstItem="cQE-8Q-cOk" firstAttribute="trailing" secondItem="9x0-SA-uYL" secondAttribute="trailing" constant="16" id="xPA-Vz-JXl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="STCPayCardRadioButton" destination="9rU-pz-ibU" id="tO5-fx-Lrl"/>
+                        <outlet property="applePayCardRadioButton" destination="KiR-Wo-nFG" id="ntP-sN-yqy"/>
+                        <outlet property="madaCardRadioButton" destination="zd1-XY-MZq" id="NYG-3I-LIM"/>
+                        <outlet property="masterCardRadioButton" destination="9x0-SA-uYL" id="Vca-Qj-0FG"/>
+                        <outlet property="paypalCardRadioButton" destination="9GM-hO-aW9" id="R7n-RD-o37"/>
+                        <outlet property="visaCardRadioButton" destination="kqm-mg-AfB" id="WpT-hv-Jtj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzh-qe-MhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4720" y="3776"/>
+            <point key="canvasLocation" x="4718.840579710145" y="3775.4464285714284"/>
         </scene>
         <!--Center Map View Controller-->
         <scene sceneID="e25-xv-cij">
@@ -1546,7 +1816,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IBt-vw-jwI">
-                                        <rect key="frame" x="518" y="0.0" width="187.5" height="138"/>
+                                        <rect key="frame" x="113.5" y="0.0" width="187.5" height="138"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG6-bH-bcW">
                                         <rect key="frame" x="380" y="50" width="18" height="12"/>
@@ -1569,14 +1839,13 @@
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.16470588235294117" blue="0.30588235294117649" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="0Dx-GQ-Imw"/>
+                                    <constraint firstItem="IBt-vw-jwI" firstAttribute="top" secondItem="zGk-BA-2yU" secondAttribute="top" id="5W8-oA-qoR"/>
                                     <constraint firstItem="wG6-bH-bcW" firstAttribute="top" secondItem="zGk-BA-2yU" secondAttribute="top" constant="50" id="7ie-wl-5OF"/>
                                     <constraint firstItem="7iW-hT-GOC" firstAttribute="top" secondItem="zGk-BA-2yU" secondAttribute="top" constant="43" id="8H4-RC-3cp"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBt-vw-jwI" secondAttribute="bottom" id="Jhw-oR-nHS"/>
+                                    <constraint firstItem="IBt-vw-jwI" firstAttribute="centerX" secondItem="zGk-BA-2yU" secondAttribute="centerX" id="OJx-UM-rHS"/>
                                     <constraint firstItem="wG6-bH-bcW" firstAttribute="trailing" secondItem="zGk-BA-2yU" secondAttribute="trailing" constant="-16" id="PpZ-Y6-WuY"/>
-                                    <constraint firstAttribute="trailing" secondItem="IBt-vw-jwI" secondAttribute="trailing" constant="120" id="SP6-KY-IV5"/>
-                                    <constraint firstItem="IBt-vw-jwI" firstAttribute="leading" secondItem="wG6-bH-bcW" secondAttribute="trailing" constant="120" id="Xfc-Gb-UHP"/>
-                                    <constraint firstItem="IBt-vw-jwI" firstAttribute="top" secondItem="zGk-BA-2yU" secondAttribute="top" id="byz-Qb-nTh"/>
                                     <constraint firstItem="7iW-hT-GOC" firstAttribute="centerX" secondItem="zGk-BA-2yU" secondAttribute="centerX" id="jsE-2D-C0c"/>
-                                    <constraint firstAttribute="bottom" secondItem="IBt-vw-jwI" secondAttribute="bottom" id="tx2-MA-ryP"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCorner">
@@ -3450,10 +3719,10 @@
             </objects>
             <point key="canvasLocation" x="2730.434782608696" y="1451.7857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment Card View Controller-->
         <scene sceneID="ahY-7p-F39">
             <objects>
-                <viewController id="p0n-9p-6Dt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentCardViewController" id="p0n-9p-6Dt" customClass="PaymentCardViewController" customModule="Tawseel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m25-OH-wxZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3526,10 +3795,10 @@
             </objects>
             <point key="canvasLocation" x="5458" y="3775"/>
         </scene>
-        <!--View Controller-->
+        <!--Pay Pal Payment Card View Controller-->
         <scene sceneID="BFz-XC-Rzh">
             <objects>
-                <viewController id="00l-2r-Iug" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PayPalPaymentCardViewController" id="00l-2r-Iug" customClass="PayPalPaymentCardViewController" customModule="Tawseel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kis-WC-asr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3626,8 +3895,10 @@
         <image name="MainMapIcone" width="91" height="91"/>
         <image name="MainViewImage" width="23" height="19.5"/>
         <image name="Mask Group 1" width="428" height="926"/>
+        <image name="STCPayCard" width="56" height="56"/>
         <image name="SucessIcon" width="55" height="55"/>
         <image name="appImage" width="109" height="69"/>
+        <image name="appleCard" width="56" height="56"/>
         <image name="back" width="62" height="62"/>
         <image name="bottomImage" width="447.5" height="673"/>
         <image name="checkbox-2" width="21" height="21"/>
@@ -3647,9 +3918,15 @@
         <image name="l2" width="8" height="16"/>
         <image name="locationIcon" width="14" height="20"/>
         <image name="locationImage2" width="14" height="20"/>
+        <image name="madaCard" width="56" height="56"/>
+        <image name="masterCard" width="56" height="56"/>
         <image name="messagesImage" width="20" height="20"/>
         <image name="notificationImage" width="16" height="19.5"/>
+        <image name="paypalCard" width="56" height="56"/>
+        <image name="selectedOne" width="22" height="22"/>
         <image name="tIcon" width="187.5" height="139"/>
+        <image name="unSelectedOne" width="22" height="22"/>
+        <image name="visaCard" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
