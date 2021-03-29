@@ -8,9 +8,9 @@
 import UIKit
 import GoogleMaps
 class MapViewController: UIViewController {
-
+    
     @IBOutlet weak var mapView: UIView!
-    @IBOutlet var loactionLabel: UIView!
+    @IBOutlet var locationLabel: UILabel!
     @IBOutlet weak var saveLocationView: ViewDesignable!
     private let locationManager = CLLocationManager()
     private let googleMap = GMSMapView()
@@ -22,7 +22,19 @@ class MapViewController: UIViewController {
         initlization()
     }
     
+    @IBAction func saveAction(_ sender: Any) {
+        // save the location
+        var user = UserDefaultsData.shared.getUser()
+        user.gpsLat = String(marker.position.latitude)
+        user.gpsLng = String(marker.position.longitude)
+        UserDefaultsData.shared.saveUser(user: user)
+        navigationController?.popViewController(animated: true)
+        // go back
+        navigationController?.popViewController(animated: true)
+    }
+    
     private func initlization() {
+        showGoogleMap(withCoordinate: CLLocationCoordinate2D())
         checkLocationServices()
         setUpSaveLocationView()
     }
@@ -79,19 +91,28 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
-    @IBAction func saveAction(_ sender: Any) {
-
+    private func getAddressFromCoordinate(currentLocation:CLLocationCoordinate2D){
+        GMSGeocoder.init().reverseGeocodeCoordinate(currentLocation) { (response, error) in
+            if error != nil{
+                return
+            }
+            if let response = response {
+                let result = response.firstResult()?.thoroughfare ?? "location not determined"
+                self.locationLabel.text = result
+            }
+        }
     }
-    
 }
+
 extension MapViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
+        self.getAddressFromCoordinate(currentLocation: location.coordinate)
         showGoogleMap(withCoordinate: location.coordinate)
     }
     
     private func showGoogleMap(withCoordinate coordinate :CLLocationCoordinate2D) {
-        let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 6)
+        let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 12)
         googleMap.frame = mapView.bounds
         googleMap.camera = camera
         mapView.addSubview(googleMap)
@@ -104,7 +125,7 @@ extension MapViewController: CLLocationManagerDelegate{
 
 extension MapViewController:GMSMapViewDelegate{
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        userLocation = coordinate
+        self.getAddressFromCoordinate(currentLocation: coordinate)
         marker.position = coordinate
     }
     

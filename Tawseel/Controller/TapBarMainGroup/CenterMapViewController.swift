@@ -8,6 +8,7 @@
 import UIKit
 import GoogleMaps
 import iOSDropDown
+import SideMenu
 class CenterMapViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
@@ -20,7 +21,7 @@ class CenterMapViewController: UIViewController {
     @IBOutlet weak var shadowBlackV: UIView!
     @IBOutlet weak var beyound5Button: UIButton!
     @IBOutlet weak var closer5Button: UIButton!
-    
+    private var menu :SideMenuNavigationController?
     
     private let locationManager = CLLocationManager()
     private let googleMap = GMSMapView()
@@ -37,7 +38,7 @@ class CenterMapViewController: UIViewController {
     }
     
     @IBAction func menuAction(_ sender: Any) {
-        
+        present(menu!, animated: true, completion: nil)
     }
     
     @IBAction func beyond5KMAction(_ sender: Any) {
@@ -49,11 +50,21 @@ class CenterMapViewController: UIViewController {
     }
     
     private func initlization() {
+        setUpSideMenu()
         setUpDropDownMenu()
         setUpViews()
         checkLocationServices()
         getMarkersData()
     }
+    
+    private func setUpSideMenu() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        menu = SideMenuNavigationController(rootViewController: vc)
+        menu?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.rightMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+    }
+    
     
     private func setUpDropDownMenu(){
         let text = try! String(contentsOfFile: Bundle.main.path(forResource: "world-cities", ofType: "txt")!)
@@ -140,7 +151,7 @@ extension CenterMapViewController: CLLocationManagerDelegate {
     }
     
     private func showGoogleMap(withCoordinate coordinate :CLLocationCoordinate2D) {
-        let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 6)
+        let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 12)
         googleMap.frame = mapView.bounds
         googleMap.camera = camera
         mapView.addSubview(googleMap)

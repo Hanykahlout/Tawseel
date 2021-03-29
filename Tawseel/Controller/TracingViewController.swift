@@ -20,6 +20,8 @@ class TracingViewController: UIViewController {
     @IBOutlet weak var ratingPopupView: UIView!
     @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var userRatingCommintTextField: UITextField!
+    @IBOutlet weak var deliveredButton: UIButton!
+    @IBOutlet weak var notDeliveredButton: UIButton!
     
     private var locationManager = CLLocationManager()
     private var googleMap = GMSMapView()
@@ -31,19 +33,26 @@ class TracingViewController: UIViewController {
     }
     
     @IBAction func addRatingAction(_ sender: Any) {
+        
     }
     
     @IBAction func deliveredAction(_ sender: Any) {
+        
     }
     
     @IBAction func noDeliveredAction(_ sender: Any) {
+        
     }
     
     private func initlization(){
+        completeDeliveryPopupView.layer.masksToBounds = false
         setInvoicationData()
         showGoogleMap(fromImage: #imageLiteral(resourceName: "locationImage2"), toImage: #imageLiteral(resourceName: "locationImage2"), currentImage: #imageLiteral(resourceName: "locationIconImage"))
         setUpViews()
         userRatingCommintTextField.layer.masksToBounds = false
+        deliveredButton.layer.masksToBounds = false
+        notDeliveredButton.layer.masksToBounds = false
+        userRatingCommintTextField.borderStyle = .none
     }
     
     private func setUpViews(){

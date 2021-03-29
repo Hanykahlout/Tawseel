@@ -8,9 +8,10 @@
 import UIKit
 
 class RsetPasswordViewController: UIViewController {
-    @IBOutlet weak var userNameTextField: TextFeildDesignable!
-    @IBOutlet weak var emailAddressTextField: TextFeildDesignable!
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var topView: UIViewCustomCornerRadius!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()

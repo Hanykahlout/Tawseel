@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SideMenu
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableVeiw: UITableView!
@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     private var currentInvocation = [InvoiceInfo]()
     private var endedInvocation = [InvoiceInfo]()
     private var isCurrent = true
+    private var menu :SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class HomeViewController: UIViewController {
         endBtn.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.6509803922, blue: 0.1019607843, alpha: 1)
         currentBtn.backgroundColor = #colorLiteral(red: 0.01568627451, green: 0.1647058824, blue: 0.3411764706, alpha: 1)
         isCurrent = false
+        tableVeiw.selectRow(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: .top)
         tableVeiw.reloadData()
     }
     
@@ -32,14 +34,30 @@ class HomeViewController: UIViewController {
         currentBtn.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.6509803922, blue: 0.1019607843, alpha: 1)
         endBtn.backgroundColor = #colorLiteral(red: 0.01568627451, green: 0.1647058824, blue: 0.3411764706, alpha: 1)
         isCurrent = true
+        tableVeiw.selectRow(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: .top)
         tableVeiw.reloadData()
     }
     
+    @IBAction func sideMenuAction(_ sender: Any) {
+        present(menu!, animated: true, completion: nil)
+    }
+    
     private func initlization() {
+        setUpSideMenu()
         setUpTableView()
         getCurrentInvoication()
         getEndedIvoicationInfo()
     }
+    
+    private func setUpSideMenu() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        menu = SideMenuNavigationController(rootViewController: vc)
+        menu?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.rightMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+    }
+    
+    
     
     private func getEndedIvoicationInfo(){
         endedInvocation.append(InvoiceInfo(driverName: "Ahmed Mostafa", deliveryAmount: "50SK", invoiceNumber: "12903712", fromLocation: "Gaza-Almokhabrat", toLocation: "Gaza-AlRemal",fromLatLong: .init(latitude: 51.46209263047101, longitude: -0.012850463390350342),toLatLong:.init(latitude: 57.08362811751865, longitude:  -4.28653210401535) ,currentLatLong: .init(latitude: 54.2728027024216, longitude: -1.8585535883903503)))
@@ -80,8 +98,15 @@ extension HomeViewController: UITableViewDelegate , UITableViewDataSource{
         return isCurrent ? currentInvocation.count : endedInvocation.count
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        UIView.animate(withDuration: 1.0) {
+            cell.alpha = 1
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableVeiw.dequeueReusableCell(withIdentifier: "InvoicationTableViewCell", for: indexPath) as! InvoicationTableViewCell
+        let cell = tableVeiw.dequeueReusableCell(withIdentifier: "OrdersTableViewCell", for: indexPath) as! OrdersTableViewCell
         cell.setData(invoice: isCurrent ? currentInvocation[indexPath.row] : endedInvocation[indexPath.row],indexPath:indexPath)
         cell.delegate = self
         return cell

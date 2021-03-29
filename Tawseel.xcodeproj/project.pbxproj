@@ -19,7 +19,7 @@
 		FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2AE260128C500D0B71D /* HomeViewController.swift */; };
 		FA21D2B2260128DE00D0B71D /* MessagesCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */; };
 		FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */; };
-		FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B82601290900D0B71D /* InvoicesViewController.swift */; };
+		FA21D2B92601290900D0B71D /* BillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2B82601290900D0B71D /* BillsViewController.swift */; };
 		FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */; };
 		FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C026012BE200D0B71D /*  GraidentButton.swift */; };
 		FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C226012BE200D0B71D /* GraidentView.swift */; };
@@ -31,6 +31,7 @@
 		FA259B5E260916C8005F03E2 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B58260916C8005F03E2 /* Cairo-Light.ttf */; };
 		FA259B612609180C005F03E2 /* MessagesCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */; };
 		FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */; };
+		FA42A696261242FB00DA6030 /* BaseResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42A695261242FB00DA6030 /* BaseResponseArray.swift */; };
 		FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */; };
 		FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */; };
 		FA498FDF25F7CEEE00AFA0DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA498FDE25F7CEEE00AFA0DF /* AppDelegate.swift */; };
@@ -41,8 +42,21 @@
 		FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */; };
 		FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A145125FFD403007EB342 /* MapViewController.swift */; };
 		FA66502126050D0D00EF9E2D /* TracingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66502026050D0D00EF9E2D /* TracingViewController.swift */; };
+		FA75FF93260C03F700E4A4C6 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FF92260C03F700E4A4C6 /* MenuTableViewController.swift */; };
+		FA75FF97260C085400E4A4C6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FF96260C085400E4A4C6 /* ProfileViewController.swift */; };
+		FA75FF9B260C087000E4A4C6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FF9A260C087000E4A4C6 /* SettingsViewController.swift */; };
+		FA75FF9E260C088400E4A4C6 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FF9D260C088400E4A4C6 /* RatingViewController.swift */; };
+		FA75FFA1260C089B00E4A4C6 /* ShareAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFA0260C089B00E4A4C6 /* ShareAppViewController.swift */; };
+		FA75FFA4260C08B500E4A4C6 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFA3260C08B500E4A4C6 /* PrivacyViewController.swift */; };
+		FA75FFA7260C08C600E4A4C6 /* WhoUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFA6260C08C600E4A4C6 /* WhoUsViewController.swift */; };
+		FA75FFAA260C08D500E4A4C6 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFA9260C08D500E4A4C6 /* ContactUsViewController.swift */; };
+		FA75FFAD260C21CB00E4A4C6 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFAC260C21CB00E4A4C6 /* RatingTableViewCell.swift */; };
+		FA75FFB0260C22E600E4A4C6 /* RatingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA75FFAF260C22E600E4A4C6 /* RatingInfo.swift */; };
 		FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */; };
 		FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */; };
+		FA7F8D71260BDBC70021FE7E /* BillsDetalisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F8D70260BDBC70021FE7E /* BillsDetalisViewController.swift */; };
+		FA7F8D83260BEC820021FE7E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F8D82260BEC820021FE7E /* MenuViewController.swift */; };
+		FA9DAF34260F848100734EA0 /* API_URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DAF33260F848100734EA0 /* API_URLs.swift */; };
 		FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */; };
 		FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB598D825F93B94009CEDFB /* BottomBorderTextField.swift */; };
 		FAB598E125F93B94009CEDFB /* ViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB598D925F93B94009CEDFB /* ViewDesignable.swift */; };
@@ -60,12 +74,19 @@
 		FAB598F725F93D36009CEDFB /* Tajawal-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */; };
 		FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */; };
 		FAD1D9EA26091AC20013CF88 /* MessagesCategoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */; };
-		FAD1D9ED26092CDD0013CF88 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */; };
+		FAD1D9ED26092CDD0013CF88 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9EC26092CDD0013CF88 /* Notifications.swift */; };
 		FAD1D9F026092F700013CF88 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */; };
-		FAD1D9F3260932920013CF88 /* NotificationInfoDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */; };
-		FAD1D9F62609446A0013CF88 /* InvoiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */; };
+		FAD1D9F3260932920013CF88 /* NotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F2260932920013CF88 /* NotificationInfo.swift */; };
+		FAD1D9F62609446A0013CF88 /* BillVisaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D9F52609446A0013CF88 /* BillVisaDetailsViewController.swift */; };
+		FAEA314D260AAEC600DE0DE4 /* BillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA314C260AAEC600DE0DE4 /* BillsTableViewCell.swift */; };
+		FAEA3150260AB28900DE0DE4 /* Billsnfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEA314F260AB28900DE0DE4 /* Billsnfo.swift */; };
 		FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAF50B9B2604D629004556A3 /* world-cities.txt */; };
-		FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */; };
+		FAF50BA32604D891004556A3 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF50BA22604D891004556A3 /* OrdersTableViewCell.swift */; };
+		FAF7141226110F9D00D8D4AA /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7141126110F9D00D8D4AA /* UserAPI.swift */; };
+		FAF7141526110FAB00D8D4AA /* GeneralAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7141426110FAB00D8D4AA /* GeneralAPI.swift */; };
+		FAF71419261113F300D8D4AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71417261113F300D8D4AA /* User.swift */; };
+		FAF7141A261113F300D8D4AA /* BaseResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71418261113F300D8D4AA /* BaseResponseObject.swift */; };
+		FAF7141F261123AF00D8D4AA /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7141E261123AF00D8D4AA /* UserDefaultsData.swift */; };
 		FAFD089B25F80B9C0024872B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD089A25F80B9B0024872B /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +108,7 @@
 		FA21D2AE260128C500D0B71D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryViewController.swift; sourceTree = "<group>"; };
 		FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		FA21D2B82601290900D0B71D /* InvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesViewController.swift; sourceTree = "<group>"; };
+		FA21D2B82601290900D0B71D /* BillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsViewController.swift; sourceTree = "<group>"; };
 		FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterMapViewController.swift; sourceTree = "<group>"; };
 		FA21D2C026012BE200D0B71D /*  GraidentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " GraidentButton.swift"; sourceTree = "<group>"; };
 		FA21D2C226012BE200D0B71D /* GraidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraidentView.swift; sourceTree = "<group>"; };
@@ -99,6 +120,7 @@
 		FA259B58260916C8005F03E2 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
 		FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		FA2E223B25F82CAB00E9D40A /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		FA42A695261242FB00DA6030 /* BaseResponseArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseArray.swift; sourceTree = "<group>"; };
 		FA472FD525F96B8400DBEAD8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA472FD825F96BA800DBEAD8 /* RsetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsetPasswordViewController.swift; sourceTree = "<group>"; };
 		FA498FDB25F7CEEE00AFA0DF /* Tawseel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tawseel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,8 +133,21 @@
 		FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		FA4A145125FFD403007EB342 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA66502026050D0D00EF9E2D /* TracingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracingViewController.swift; sourceTree = "<group>"; };
+		FA75FF92260C03F700E4A4C6 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		FA75FF96260C085400E4A4C6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FA75FF9A260C087000E4A4C6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FA75FF9D260C088400E4A4C6 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		FA75FFA0260C089B00E4A4C6 /* ShareAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAppViewController.swift; sourceTree = "<group>"; };
+		FA75FFA3260C08B500E4A4C6 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		FA75FFA6260C08C600E4A4C6 /* WhoUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoUsViewController.swift; sourceTree = "<group>"; };
+		FA75FFA9260C08D500E4A4C6 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		FA75FFAC260C21CB00E4A4C6 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		FA75FFAF260C22E600E4A4C6 /* RatingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingInfo.swift; sourceTree = "<group>"; };
 		FA77471025FA5E3A003BBFE5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA7F8D70260BDBC70021FE7E /* BillsDetalisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsDetalisViewController.swift; sourceTree = "<group>"; };
+		FA7F8D82260BEC820021FE7E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FA9DAF33260F848100734EA0 /* API_URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_URLs.swift; sourceTree = "<group>"; };
 		FAB598D725F93B94009CEDFB /* UIViewCustomCornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustomCornerRadius.swift; sourceTree = "<group>"; };
 		FAB598D825F93B94009CEDFB /* BottomBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBorderTextField.swift; sourceTree = "<group>"; };
 		FAB598D925F93B94009CEDFB /* ViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDesignable.swift; sourceTree = "<group>"; };
@@ -130,12 +165,19 @@
 		FAB598F025F93D36009CEDFB /* Tajawal-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-ExtraLight.ttf"; sourceTree = "<group>"; };
 		FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceInfo.swift; sourceTree = "<group>"; };
 		FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCategoryInfo.swift; sourceTree = "<group>"; };
-		FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfo.swift; sourceTree = "<group>"; };
+		FAD1D9EC26092CDD0013CF88 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
-		FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfoDate.swift; sourceTree = "<group>"; };
-		FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDetailsViewController.swift; sourceTree = "<group>"; };
+		FAD1D9F2260932920013CF88 /* NotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInfo.swift; sourceTree = "<group>"; };
+		FAD1D9F52609446A0013CF88 /* BillVisaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillVisaDetailsViewController.swift; sourceTree = "<group>"; };
+		FAEA314C260AAEC600DE0DE4 /* BillsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsTableViewCell.swift; sourceTree = "<group>"; };
+		FAEA314F260AB28900DE0DE4 /* Billsnfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billsnfo.swift; sourceTree = "<group>"; };
 		FAF50B9B2604D629004556A3 /* world-cities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "world-cities.txt"; sourceTree = "<group>"; };
-		FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicationTableViewCell.swift; sourceTree = "<group>"; };
+		FAF50BA22604D891004556A3 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		FAF7141126110F9D00D8D4AA /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		FAF7141426110FAB00D8D4AA /* GeneralAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAPI.swift; sourceTree = "<group>"; };
+		FAF71417261113F300D8D4AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAF71418261113F300D8D4AA /* BaseResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseObject.swift; sourceTree = "<group>"; };
+		FAF7141E261123AF00D8D4AA /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
 		FAFD089A25F80B9B0024872B /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,7 +236,7 @@
 				FA21D2AE260128C500D0B71D /* HomeViewController.swift */,
 				FA21D2B1260128DE00D0B71D /* MessagesCategoryViewController.swift */,
 				FA21D2B4260128ED00D0B71D /* NotificationViewController.swift */,
-				FA21D2B82601290900D0B71D /* InvoicesViewController.swift */,
+				FA21D2B82601290900D0B71D /* BillsViewController.swift */,
 				FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */,
 			);
 			path = TapBarMainGroup;
@@ -245,7 +287,8 @@
 		FA498FDD25F7CEEE00AFA0DF /* Tawseel */ = {
 			isa = PBXGroup;
 			children = (
-				FAF50B9B2604D629004556A3 /* world-cities.txt */,
+				FAF7141D2611237C00D8D4AA /* UserDefaultsStorage */,
+				FA9DAF32260F844E00734EA0 /* API */,
 				FA21D2BF26012BE200D0B71D /* Extension */,
 				FA1FC25925FF198000FBEB36 /* Language */,
 				FAB598E825F93D1A009CEDFB /* Fonts */,
@@ -259,6 +302,7 @@
 				FA498FE725F7CEF000AFA0DF /* Assets.xcassets */,
 				FA498FE925F7CEF000AFA0DF /* LaunchScreen.storyboard */,
 				FA498FEC25F7CEF000AFA0DF /* Info.plist */,
+				FAF50B9B2604D629004556A3 /* world-cities.txt */,
 				FA1FC26B25FF1B6000FBEB36 /* Localizable.strings */,
 			);
 			path = Tawseel;
@@ -267,6 +311,7 @@
 		FA498FF325F7D0DE00AFA0DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA75FF95260C080C00E4A4C6 /* SideMenuViewControllers */,
 				FA4A144F25FFC614007EB342 /* Auth View Controller */,
 				FA21D2AA2601283500D0B71D /* TapBarMainGroup */,
 				FA075E3726095E9200F68BAB /* PaymentViewControllers */,
@@ -274,7 +319,8 @@
 				FA4A144C25FFC606007EB342 /* UserProfileViewController.swift */,
 				FA4A145125FFD403007EB342 /* MapViewController.swift */,
 				FA66502026050D0D00EF9E2D /* TracingViewController.swift */,
-				FAD1D9F52609446A0013CF88 /* InvoiceDetailsViewController.swift */,
+				FAD1D9F52609446A0013CF88 /* BillVisaDetailsViewController.swift */,
+				FA7F8D70260BDBC70021FE7E /* BillsDetalisViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,8 +330,10 @@
 			children = (
 				FAB84FD62604F3BF004831D2 /* InvoiceInfo.swift */,
 				FAD1D9E926091AC20013CF88 /* MessagesCategoryInfo.swift */,
-				FAD1D9EC26092CDD0013CF88 /* NotificationInfo.swift */,
-				FAD1D9F2260932920013CF88 /* NotificationInfoDate.swift */,
+				FAD1D9EC26092CDD0013CF88 /* Notifications.swift */,
+				FAD1D9F2260932920013CF88 /* NotificationInfo.swift */,
+				FAEA314F260AB28900DE0DE4 /* Billsnfo.swift */,
+				FA75FFAF260C22E600E4A4C6 /* RatingInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,15 +349,43 @@
 			path = "Auth View Controller";
 			sourceTree = "<group>";
 		};
+		FA75FF95260C080C00E4A4C6 /* SideMenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F8D82260BEC820021FE7E /* MenuViewController.swift */,
+				FA75FF92260C03F700E4A4C6 /* MenuTableViewController.swift */,
+				FA75FF96260C085400E4A4C6 /* ProfileViewController.swift */,
+				FA75FF9A260C087000E4A4C6 /* SettingsViewController.swift */,
+				FA75FF9D260C088400E4A4C6 /* RatingViewController.swift */,
+				FA75FFA0260C089B00E4A4C6 /* ShareAppViewController.swift */,
+				FA75FFA3260C08B500E4A4C6 /* PrivacyViewController.swift */,
+				FA75FFA6260C08C600E4A4C6 /* WhoUsViewController.swift */,
+				FA75FFA9260C08D500E4A4C6 /* ContactUsViewController.swift */,
+			);
+			path = SideMenuViewControllers;
+			sourceTree = "<group>";
+		};
 		FA77471325FA6292003BBFE5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				FA77471825FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift */,
-				FAF50BA22604D891004556A3 /* InvoicationTableViewCell.swift */,
+				FAF50BA22604D891004556A3 /* OrdersTableViewCell.swift */,
 				FA259B602609180C005F03E2 /* MessagesCategoryTableViewCell.swift */,
 				FAD1D9EF26092F700013CF88 /* NotificationTableViewCell.swift */,
+				FAEA314C260AAEC600DE0DE4 /* BillsTableViewCell.swift */,
+				FA75FFAC260C21CB00E4A4C6 /* RatingTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA9DAF32260F844E00734EA0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7140E26110A4D00D8D4AA /* URLs */,
+				FAF7140D2611096D00D8D4AA /* API Controllers */,
+				FAF7140C2611095900D8D4AA /* API Models */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		FAB598D625F93B94009CEDFB /* Designable */ = {
@@ -348,6 +424,41 @@
 				FAB598EF25F93D36009CEDFB /* Tajawal-Regular.ttf */,
 			);
 			path = Tajawal;
+			sourceTree = "<group>";
+		};
+		FAF7140C2611095900D8D4AA /* API Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF71417261113F300D8D4AA /* User.swift */,
+				FAF71418261113F300D8D4AA /* BaseResponseObject.swift */,
+				FA42A695261242FB00DA6030 /* BaseResponseArray.swift */,
+			);
+			path = "API Models";
+			sourceTree = "<group>";
+		};
+		FAF7140D2611096D00D8D4AA /* API Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7141126110F9D00D8D4AA /* UserAPI.swift */,
+				FAF7141426110FAB00D8D4AA /* GeneralAPI.swift */,
+			);
+			path = "API Controllers";
+			sourceTree = "<group>";
+		};
+		FAF7140E26110A4D00D8D4AA /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DAF33260F848100734EA0 /* API_URLs.swift */,
+			);
+			path = URLs;
+			sourceTree = "<group>";
+		};
+		FAF7141D2611237C00D8D4AA /* UserDefaultsStorage */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7141E261123AF00D8D4AA /* UserDefaultsData.swift */,
+			);
+			path = UserDefaultsStorage;
 			sourceTree = "<group>";
 		};
 		FAFD089925F80B9B0024872B /* Extension */ = {
@@ -510,43 +621,64 @@
 				FA075E2F26095DF000F68BAB /* PaymentViewController.swift in Sources */,
 				FA075E3526095E8C00F68BAB /* PayPalPaymentCardViewController.swift in Sources */,
 				FAB598E125F93B94009CEDFB /* ViewDesignable.swift in Sources */,
+				FA7F8D71260BDBC70021FE7E /* BillsDetalisViewController.swift in Sources */,
+				FAF7141526110FAB00D8D4AA /* GeneralAPI.swift in Sources */,
 				FA259B612609180C005F03E2 /* MessagesCategoryTableViewCell.swift in Sources */,
 				FAB598E325F93B94009CEDFB /* TextFieldDesignable.swift in Sources */,
 				FA21D2B5260128ED00D0B71D /* NotificationViewController.swift in Sources */,
+				FA75FF97260C085400E4A4C6 /* ProfileViewController.swift in Sources */,
 				FA4A144D25FFC606007EB342 /* UserProfileViewController.swift in Sources */,
+				FA42A696261242FB00DA6030 /* BaseResponseArray.swift in Sources */,
 				FAD1D9EA26091AC20013CF88 /* MessagesCategoryInfo.swift in Sources */,
 				FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */,
 				FA21D2AC2601288F00D0B71D /* MainTabBarViewController.swift in Sources */,
-				FAD1D9F62609446A0013CF88 /* InvoiceDetailsViewController.swift in Sources */,
+				FAD1D9F62609446A0013CF88 /* BillVisaDetailsViewController.swift in Sources */,
+				FA75FFA4260C08B500E4A4C6 /* PrivacyViewController.swift in Sources */,
 				FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */,
 				FAB84FD72604F3BF004831D2 /* InvoiceInfo.swift in Sources */,
 				FA4A145225FFD404007EB342 /* MapViewController.swift in Sources */,
 				FA77471925FA62DD003BBFE5 /* WelcomePageCollectionViewCell.swift in Sources */,
 				FA1FC25C25FF198000FBEB36 /* L102Localizer.swift in Sources */,
+				FA75FFB0260C22E600E4A4C6 /* RatingInfo.swift in Sources */,
 				FA21D2AF260128C500D0B71D /* HomeViewController.swift in Sources */,
 				FAB598E225F93B94009CEDFB /* ButtonDesignable.swift in Sources */,
+				FAF7141F261123AF00D8D4AA /* UserDefaultsData.swift in Sources */,
 				FA77471125FA5E3A003BBFE5 /* WelcomeViewController.swift in Sources */,
+				FAF71419261113F300D8D4AA /* User.swift in Sources */,
 				FAB598E525F93B94009CEDFB /* UIImageViewDesignable.swift in Sources */,
+				FA75FF9B260C087000E4A4C6 /* SettingsViewController.swift in Sources */,
 				FA498FDF25F7CEEE00AFA0DF /* AppDelegate.swift in Sources */,
 				FAFD089B25F80B9C0024872B /* ViewExtension.swift in Sources */,
-				FAD1D9F3260932920013CF88 /* NotificationInfoDate.swift in Sources */,
+				FAD1D9F3260932920013CF88 /* NotificationInfo.swift in Sources */,
 				FAB598E425F93B94009CEDFB /* IconTextField.swift in Sources */,
 				FA1FC25D25FF198000FBEB36 /* L102Language.swift in Sources */,
 				FA075E3226095E2300F68BAB /* PaymentCardViewController.swift in Sources */,
+				FA9DAF34260F848100734EA0 /* API_URLs.swift in Sources */,
+				FA75FF93260C03F700E4A4C6 /* MenuTableViewController.swift in Sources */,
 				FA472FD625F96B8400DBEAD8 /* SignUpViewController.swift in Sources */,
-				FAD1D9ED26092CDD0013CF88 /* NotificationInfo.swift in Sources */,
-				FAF50BA32604D891004556A3 /* InvoicationTableViewCell.swift in Sources */,
+				FA75FFA7260C08C600E4A4C6 /* WhoUsViewController.swift in Sources */,
+				FAD1D9ED26092CDD0013CF88 /* Notifications.swift in Sources */,
+				FAF50BA32604D891004556A3 /* OrdersTableViewCell.swift in Sources */,
+				FA75FF9E260C088400E4A4C6 /* RatingViewController.swift in Sources */,
+				FA7F8D83260BEC820021FE7E /* MenuViewController.swift in Sources */,
+				FA75FFAD260C21CB00E4A4C6 /* RatingTableViewCell.swift in Sources */,
+				FAF7141226110F9D00D8D4AA /* UserAPI.swift in Sources */,
+				FA75FFA1260C089B00E4A4C6 /* ShareAppViewController.swift in Sources */,
+				FA75FFAA260C08D500E4A4C6 /* ContactUsViewController.swift in Sources */,
 				FA2E223C25F82CAB00E9D40A /* LoginScreenViewController.swift in Sources */,
 				FA472FD925F96BA800DBEAD8 /* RsetPasswordViewController.swift in Sources */,
+				FAEA314D260AAEC600DE0DE4 /* BillsTableViewCell.swift in Sources */,
 				FAB598E625F93B94009CEDFB /* UILabelDesignable.swift in Sources */,
-				FA21D2B92601290900D0B71D /* InvoicesViewController.swift in Sources */,
+				FA21D2B92601290900D0B71D /* BillsViewController.swift in Sources */,
 				FA06D2702602875D0054D0B1 /* ViewCustomExtension.swift in Sources */,
 				FAB598DF25F93B94009CEDFB /* UIViewCustomCornerRadius.swift in Sources */,
+				FAF7141A261113F300D8D4AA /* BaseResponseObject.swift in Sources */,
 				FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */,
 				FAB598E025F93B94009CEDFB /* BottomBorderTextField.swift in Sources */,
 				FA66502126050D0D00EF9E2D /* TracingViewController.swift in Sources */,
 				FA498FE125F7CEEE00AFA0DF /* SceneDelegate.swift in Sources */,
 				FA21D2B2260128DE00D0B71D /* MessagesCategoryViewController.swift in Sources */,
+				FAEA3150260AB28900DE0DE4 /* Billsnfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

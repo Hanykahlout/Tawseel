@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SideMenu
 class PaymentViewController: UIViewController {
 
     @IBOutlet weak var visaCardRadioButton: UIButton!
@@ -15,13 +15,12 @@ class PaymentViewController: UIViewController {
     @IBOutlet weak var paypalCardRadioButton: UIButton!
     @IBOutlet weak var applePayCardRadioButton: UIButton!
     @IBOutlet weak var STCPayCardRadioButton: UIButton!
-    
-    
+    private var menu :SideMenuNavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func visaCardRadioButtonAction(_ sender: Any) {
@@ -87,7 +86,7 @@ class PaymentViewController: UIViewController {
     }
     
     @IBAction func sideMenuAction(_ sender: Any) {
-        
+        present(menu!, animated: true, completion: nil)
     }
     
     @IBAction func addAction(_ sender: Any) {
@@ -104,12 +103,22 @@ class PaymentViewController: UIViewController {
         }else if STCPayCardRadioButton.isSelected {
             // STC Pay Card Action
         }
-
+        let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentCardViewController") as! PaymentCardViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func initlization(){
+        setUpSideMenu()
         visaCardRadioButton.isSelected = true
         
+    }
+    
+    private func setUpSideMenu() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        menu = SideMenuNavigationController(rootViewController: vc)
+        menu?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.rightMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
     }
     
 }

@@ -1,14 +1,12 @@
 //
-//  NotificationInfo.swift
+//  NotificationInfoDate.swift
 //  Tawseel
 //
 //  Created by macbook on 22/03/2021.
 //
 
 import Foundation
-
 struct NotificationInfo {
-    var isNew:Bool
-    var text:String
-    var time:String
+    var date:String
+    var notification:[Notifications]
 }

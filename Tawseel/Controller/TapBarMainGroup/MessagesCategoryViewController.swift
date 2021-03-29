@@ -6,22 +6,27 @@
 //
 
 import UIKit
-
+import SideMenu
 class MessagesCategoryViewController: UIViewController {
     
     @IBOutlet weak var shadowBlackView: UIView!
     @IBOutlet weak var categoriesTableView: UITableView!
     @IBOutlet weak var deletingActionPopUpView: UIView!
+    @IBOutlet weak var shadowView: UIView!
     
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
+    private var menu :SideMenuNavigationController?
     private var categories:[MessagesCategoryInfo] = [MessagesCategoryInfo]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
     }
     
     @IBAction func sideMenuAction(_ sender: Any) {
+        present(menu!, animated: true, completion: nil)
     }
     
     @IBAction func deleteAction(_ sender: Any) {
@@ -30,10 +35,34 @@ class MessagesCategoryViewController: UIViewController {
     @IBAction func exitAction(_ sender: Any) {
     }
     
-    
     private func initlization(){
+        setUpSideMenu()
         setUpTableView()
+        setUpViews()
         getCategories()
+    }
+    
+    private func setUpViews(){
+        deleteButton.layer.masksToBounds = false
+        cancelButton.layer.masksToBounds = false
+        deletingActionPopUpView.layer.masksToBounds = false
+        setUpShadowView()
+    }
+    
+    private func setUpShadowView(){
+        shadowView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(removePopUp)))
+    }
+    
+    @objc private func removePopUp(){
+        shadowView.isHidden = true
+        deletingActionPopUpView.isHidden = true
+    }
+    
+    private func setUpSideMenu() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        menu = SideMenuNavigationController(rootViewController: vc)
+        menu?.setNavigationBarHidden(true, animated: false)
+        SideMenuManager.default.rightMenuNavigationController = menu
     }
     
     private func getCategories(){

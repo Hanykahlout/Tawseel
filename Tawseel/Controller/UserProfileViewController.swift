@@ -6,10 +6,10 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class UserProfileViewController: UIViewController {
-    
-    @IBOutlet weak var scrollView: UIScrollView!
+
     @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var centerPopUpView: ViewDesignable!
     @IBOutlet weak var popUpImage: UIImageView!
@@ -19,32 +19,48 @@ class UserProfileViewController: UIViewController {
     @IBOutlet weak var mobileNumberTextField: UITextField!
     @IBOutlet weak var detectLocationTextField: UITextField!
     @IBOutlet weak var fullNameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initlization()
     }
-    private func initlization() {
-        scrollView.delegate = self
-        navigationController?.navigationBar.isHidden = true
-        topView.setGradient(firstColor: #colorLiteral(red: 0.9803921569, green: 0.6509803922, blue: 0.1019607843, alpha: 1), secondColor: .black, startPoint: nil, endPoint: nil)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let user = UserDefaultsData.shared.getUser()
+        if let lat = user.gpsLat , let long = user.gpsLng ,let doubleLat = Double(lat),let doubleLong = Double(long){
+            getAddressFromCoordinate(currentLocation: CLLocationCoordinate2D(latitude: doubleLat, longitude: doubleLong))
+        }
     }
+
     @IBAction func locationAction(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         navigationController?.pushViewController(vc, animated: true)
     }
+    
     @IBAction func imagePickerAction(_ sender: Any) {
         selectImageAction()
     }
+    
     @IBAction func savingDataAction(_ sender: Any) {
         // register user info process here
         showPopUp()
+        // after sucessfully saved
+        UserDefaults.standard.removeObject(forKey: "NotEndFromUserProfile")
     }
+        
+    private func initlization() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        topView.setGradient(firstColor: #colorLiteral(red: 0.9803921569, green: 0.6509803922, blue: 0.1019607843, alpha: 1), secondColor: .black, startPoint: nil, endPoint: nil)
+    }
+    
     private func showPopUp() {
         blackView.isHidden = false
         centerPopUpView.isHidden = false
         blackView.isUserInteractionEnabled = true
         blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(removePopUpAction)))
     }
+
     @objc func removePopUpAction(){
         // here go to main view controller
         blackView.isHidden = true
@@ -67,6 +83,19 @@ class UserProfileViewController: UIViewController {
         }))
         present(alertC, animated: true, completion: nil)
     }
+    
+    private func getAddressFromCoordinate(currentLocation:CLLocationCoordinate2D){
+        GMSGeocoder.init().reverseGeocodeCoordinate(currentLocation) { (response, error) in
+            if error != nil{
+                return
+            }
+            if let response = response {
+                let result = response.firstResult()?.thoroughfare ?? "location not determined"
+                self.detectLocationTextField.text = result
+            }
+        }
+    }
+    
 }
 
 extension UserProfileViewController : UIImagePickerControllerDelegate , UINavigationControllerDelegate{
@@ -86,13 +115,5 @@ extension UserProfileViewController : UIImagePickerControllerDelegate , UINaviga
             userImageView.image = orginalImage
         }
         dismiss(animated: true, completion: nil)
-    }
-}
-
-extension UserProfileViewController: UIScrollViewDelegate{
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y < 0 {
-            scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-        }
     }
 }

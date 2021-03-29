@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         L102Localizer.DoTheMagic()
         GMSServices.provideAPIKey("AIzaSyBd54gighTa1XMemM8G2dDJXN10AxrtDdY")
         GMSPlacesClient.provideAPIKey("AIzaSyBd54gighTa1XMemM8G2dDJXN10AxrtDdY")
+        
         return true
     }
 

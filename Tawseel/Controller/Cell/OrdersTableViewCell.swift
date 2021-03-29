@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InvoicationTableViewCell: UITableViewCell {
+class OrdersTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var driverName: UILabel!

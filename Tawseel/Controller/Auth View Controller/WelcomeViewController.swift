@@ -16,6 +16,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var pageButton1: UIButton!
     @IBOutlet weak var pageButton2: UIButton!
     @IBOutlet weak var pageButton3: UIButton!
+    @IBOutlet weak var startButtonArrow: UIImageView!
     private var data = [(image:UIImage,imageHeightConstant:CGFloat,title:String,details:String)]()
     private var index = 0
     
@@ -54,33 +55,16 @@ If you own a car, you can join us and work as a delivery representative within a
     
     @IBAction func skipAction(_ sender: Any) {
         collectionView.selectItem(at: IndexPath.init(row: 2, section: 0), animated: true, scrollPosition: .centeredHorizontally)
-        nextButton.isHidden = true
-        skipButton.isHidden = true
-        startNowButton.isHidden = false
-        changePageControl()
     }
     
     @IBAction func startNowAction(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AuthNav") as! UINavigationController
+        navigationController?.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func nextAction(_ sender: Any) {
         index = (index+1)%3
         collectionView.selectItem(at: IndexPath.init(row: index, section: 0), animated: true, scrollPosition: .centeredHorizontally)
-        switch index {
-        case 0,1:
-            nextButton.isHidden = false
-            skipButton.isHidden = false
-            startNowButton.isHidden = true
-            break
-        case 2:
-            nextButton.isHidden = true
-            skipButton.isHidden = true
-            startNowButton.isHidden = false
-            break
-        default:
-            break
-        }
-        changePageControl()
     }
     
     private func changePageControl() {
@@ -135,11 +119,13 @@ extension WelcomeViewController: UICollectionViewDelegate , UICollectionViewData
         let currentPage = CGFloat(scrollView.contentOffset.x/view.frame.width).rounded()
         switch currentPage {
         case 0.0,1.0:
+            startButtonArrow.isHidden = true
             startNowButton.isHidden = true
             nextButton.isHidden = false
             skipButton.isHidden = false
             break
         case 2.0:
+            startButtonArrow.isHidden = false
             startNowButton.isHidden = false
             nextButton.isHidden = true
             skipButton.isHidden = true
