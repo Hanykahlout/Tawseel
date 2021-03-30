@@ -19,9 +19,18 @@ class MenuViewController: UIViewController {
     }
         
     @IBAction func logoutAction(_ sender: Any) {
-        
+        performLogout()
     }
     
+    private func performLogout(){
+        UserAPI.shared.logout { (status) in
+            if status{
+                UserDefaultsData.shared.clearUserData()
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "AuthNav") as! UINavigationController
+                self.navigationController?.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
 }
 
 

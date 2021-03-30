@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
@@ -52,5 +51,5 @@ class SignUpViewController: UIViewController {
             }
         }
     }
+    
 }
-

@@ -23,6 +23,7 @@
 		FA21D2BD2601295500D0B71D /* CenterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */; };
 		FA21D2C326012BE200D0B71D /*  GraidentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C026012BE200D0B71D /*  GraidentButton.swift */; };
 		FA21D2C526012BE200D0B71D /* GraidentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21D2C226012BE200D0B71D /* GraidentView.swift */; };
+		FA25842D2613CCBF00B93021 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA25842C2613CCBF00B93021 /* GoogleService-Info.plist */; };
 		FA259B59260916C8005F03E2 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B53260916C7005F03E2 /* Cairo-Regular.ttf */; };
 		FA259B5A260916C8005F03E2 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B54260916C7005F03E2 /* Cairo-SemiBold.ttf */; };
 		FA259B5B260916C8005F03E2 /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA259B55260916C7005F03E2 /* Cairo-ExtraLight.ttf */; };
@@ -112,6 +113,7 @@
 		FA21D2BC2601295500D0B71D /* CenterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterMapViewController.swift; sourceTree = "<group>"; };
 		FA21D2C026012BE200D0B71D /*  GraidentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " GraidentButton.swift"; sourceTree = "<group>"; };
 		FA21D2C226012BE200D0B71D /* GraidentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraidentView.swift; sourceTree = "<group>"; };
+		FA25842C2613CCBF00B93021 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA259B53260916C7005F03E2 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
 		FA259B54260916C7005F03E2 /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
 		FA259B55260916C7005F03E2 /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				FA498FE925F7CEF000AFA0DF /* LaunchScreen.storyboard */,
 				FA498FEC25F7CEF000AFA0DF /* Info.plist */,
 				FAF50B9B2604D629004556A3 /* world-cities.txt */,
+				FA25842C2613CCBF00B93021 /* GoogleService-Info.plist */,
 				FA1FC26B25FF1B6000FBEB36 /* Localizable.strings */,
 			);
 			path = Tawseel;
@@ -541,6 +544,7 @@
 				FAB598F425F93D36009CEDFB /* Tajawal-Black.ttf in Resources */,
 				FA259B5A260916C8005F03E2 /* Cairo-SemiBold.ttf in Resources */,
 				FAB598F225F93D36009CEDFB /* Tajawal-Medium.ttf in Resources */,
+				FA25842D2613CCBF00B93021 /* GoogleService-Info.plist in Resources */,
 				FAB598F325F93D36009CEDFB /* Tajawal-Light.ttf in Resources */,
 				FA259B59260916C8005F03E2 /* Cairo-Regular.ttf in Resources */,
 				FAF50B9C2604D629004556A3 /* world-cities.txt in Resources */,
@@ -846,7 +850,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chathanyalkahlout.Tawseel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanyalkahlout.Tawseel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chathanyalkahlout.Tawseel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanyalkahlout.Tawseel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

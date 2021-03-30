@@ -102,6 +102,7 @@ class MapViewController: UIViewController {
             }
         }
     }
+    
 }
 
 extension MapViewController: CLLocationManagerDelegate{

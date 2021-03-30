@@ -53,6 +53,7 @@ class CenterMapViewController: UIViewController {
         setUpSideMenu()
         setUpDropDownMenu()
         setUpViews()
+        showGoogleMap(withCoordinate: CLLocationCoordinate2D())
         checkLocationServices()
         getMarkersData()
     }
@@ -76,6 +77,7 @@ class CenterMapViewController: UIViewController {
             cityDD.optionArray.append(wordArray[0])
         }
     }
+    
     private func setUpViews() {
         shadowBlackV.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(setUpBlackView)))
         shadowBlackV.isUserInteractionEnabled = true
@@ -147,6 +149,7 @@ class CenterMapViewController: UIViewController {
 extension CenterMapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else {return}
+        googleMap.clear()
         showGoogleMap(withCoordinate: location.coordinate)
     }
     

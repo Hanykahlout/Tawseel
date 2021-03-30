@@ -45,8 +45,10 @@ class UserProfileViewController: UIViewController {
     @IBAction func savingDataAction(_ sender: Any) {
         // register user info process here
         showPopUp()
+        
         // after sucessfully saved
         UserDefaults.standard.removeObject(forKey: "NotEndFromUserProfile")
+        
     }
         
     private func initlization() {
@@ -117,3 +119,5 @@ extension UserProfileViewController : UIImagePickerControllerDelegate , UINaviga
         dismiss(animated: true, completion: nil)
     }
 }
+
+

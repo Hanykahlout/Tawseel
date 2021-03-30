@@ -7,6 +7,7 @@
 
 import Foundation
 import ObjectMapper
+
 struct BaseResponseArray<T : Mappable> : Mappable {
     var status : Bool?
     var token : String?

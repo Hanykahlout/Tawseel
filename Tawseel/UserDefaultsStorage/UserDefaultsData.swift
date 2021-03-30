@@ -68,6 +68,7 @@ class UserDefaultsData {
         UserDefaults.standard.removeObject(forKey: "avatar")
         UserDefaults.standard.removeObject(forKey: "created_at")
         UserDefaults.standard.removeObject(forKey: "updated_at")
+        UserDefaults.standard.removeObject(forKey: "token")
     }
     
 }
