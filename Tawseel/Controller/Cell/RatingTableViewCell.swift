@@ -14,11 +14,12 @@ class RatingTableViewCell: UITableViewCell {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var ratingView: CosmosView!
     
-    func setData(ratingInfo info:RatingInfo) {
-        delegateImage.image = info.delegateImage
-        delegateName.text = info.delegateName
-        commentLabel.text = info.userComment
-        ratingView.rating = info.ratingNumber
+    
+    func setData(ratingInfo info:Rate) {
+        delegateImage.sd_setImage(with: URL(string: "http://tawseel.pal-dev.com\(info.driver!.avatar ?? "")"), placeholderImage: #imageLiteral(resourceName: "personalImage"))
+        delegateName.text = info.driver!.iDName ?? ""
+        commentLabel.text = info.text ?? ""
+        ratingView.rating = Double(info.stars ?? 0)
     }
 
 }

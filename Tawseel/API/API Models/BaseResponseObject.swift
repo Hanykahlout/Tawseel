@@ -20,4 +20,3 @@ struct BaseResponseObject<T:Mappable> : Mappable {
     }
 
 }
-

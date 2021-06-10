@@ -12,6 +12,7 @@ class NotificationTableViewCell: UITableViewCell {
     @IBOutlet weak var notificationTextLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var notificationView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         notificationView.layer.masksToBounds = false
@@ -19,9 +20,10 @@ class NotificationTableViewCell: UITableViewCell {
     
     func setData(notificationInfo info : Notifications){
         notificationTextLabel.text = info.text
-        timeLabel.text = info.time
+        let newDateFormatter = DateFormatter()
+        newDateFormatter.dateFormat = "hh:mm a"
+        timeLabel.text = newDateFormatter.string(from: info.time)
     }
-
 }
 
 

@@ -1,0 +1,549 @@
+"COk-Hy-9x3.text" = "أقرب من 5 كيلو";
+
+"vLI-uc-O35.text" = "موقع السائق";
+
+"bQm-A5-KM7.text" = "أبعد من 5 كيلو";
+
+"qsr-Ba-l5e.text" = "الطلبات";
+
+/* Class = "UIButton"; normalTitle = "WhatsApp Direct"; ObjectID = "0E5-pm-GC0"; */
+"0E5-pm-GC0.normalTitle" = "واتس اب مباشر";
+
+/* Class = "UIButton"; normalTitle = "Location"; ObjectID = "0T5-fV-lXB"; */
+"0T5-fV-lXB.normalTitle" = "موقع";
+
+/* Class = "UILabel"; text = "Delivery amount"; ObjectID = "0lF-b0-MCg"; */
+"0lF-b0-MCg.text" = "مبلغ التسليم";
+
+/* Class = "UILabel"; text = "33SR"; ObjectID = "0mX-ee-cps"; */
+"0mX-ee-cps.text" = "33 ريال";
+
+/* Class = "UILabel"; text = "from"; ObjectID = "1Iq-P6-LPh"; */
+"1Iq-P6-LPh.text" = "من";
+
+/* Class = "UILabel"; text = "Orders"; ObjectID = "1Ot-mf-iSN"; */
+"1Ot-mf-iSN.text" = "طلبات";
+
+/* Class = "UIButton"; normalTitle = "Terms of Privacy Policy and Use"; ObjectID = "1Th-Dm-nqZ"; */
+"1Th-Dm-nqZ.normalTitle" = "شروط سياسة الخصوصية والاستخدام";
+
+/* Class = "UILabel"; text = "Visa Card"; ObjectID = "1yQ-QQ-GVx"; */
+"1yQ-QQ-GVx.text" = "بطاقة فيزا";
+
+/* Class = "UILabel"; text = "When you log in, you agree to all"; ObjectID = "25m-4G-72g"; */
+"25m-4G-72g.text" = "عندما تقوم بتسجيل الدخول ، فإنك توافق على الجميع";
+
+/* Class = "UILabel"; text = "from"; ObjectID = "36Y-lz-IdH"; */
+"36Y-lz-IdH.text" = "من";
+
+/* Class = "UILabel"; text = "Choose the attachment"; ObjectID = "3Ja-bS-EkS"; */
+"3Ja-bS-EkS.text" = "اختر المرفق";
+
+/* Class = "UILabel"; text = "Share The App"; ObjectID = "3jb-7G-xsq"; */
+"3jb-7G-xsq.text" = "شارك التطبيق";
+
+/* Class = "UILabel"; text = "Delivery Location"; ObjectID = "3vr-G2-z7i"; */
+"3vr-G2-z7i.text" = "موقع التسليم";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "43u-na-LIc"; */
+"43u-na-LIc.text" = "الإشعارات";
+
+/* Class = "UILabel"; text = "Profile Personly"; ObjectID = "4og-9I-ByU"; */
+"4og-9I-ByU.text" = "الملف الشخصي";
+
+/* Class = "UIButton"; normalTitle = "Pay The Bill"; ObjectID = "5Fg-8L-Yle"; */
+"5Fg-8L-Yle.normalTitle" = "ادفع الفاتورة";
+
+/* Class = "UILabel"; text = "Driver Distance"; ObjectID = "5c6-if-r44"; */
+"5c6-if-r44.text" = "مسافة السائق";
+
+/* Class = "UIButton"; normalTitle = "Terms of Privacy Policy and Use"; ObjectID = "5sc-fu-Zc6"; */
+"5sc-fu-Zc6.normalTitle" = "شروط سياسة الخصوصية والاستخدام";
+
+/* Class = "UILabel"; text = "Tawseel application helps you to choose the closest marketing personnel to the location of your order by displaying them on the map"; ObjectID = "66x-X4-wxG"; */
+"66x-X4-wxG.text" = "يساعدك تطبيق توصيل على اختيار أقرب موظف تسويق إلى موقع طلبك من خلال عرضهم على الخريطة";
+
+/* Class = "UILabel"; text = "Apple Pay Card"; ObjectID = "69O-Oi-GSw"; */
+"69O-Oi-GSw.text" = "Apple Pay بطاقة";
+
+/* Class = "UIButton"; normalTitle = "Add Rating"; ObjectID = "6WA-FI-9mQ"; */
+"6WA-FI-9mQ.normalTitle" = "إضافة التقييم";
+
+/* Class = "UILabel"; text = "Application Rating"; ObjectID = "6iy-I3-o9w"; */
+"6iy-I3-o9w.text" = "تقييم التطبيق";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "6rF-DC-qdy"; */
+"6rF-DC-qdy.text" = "الوقت";
+
+/* Class = "UILabel"; text = "time"; ObjectID = "7Bx-QO-LeS"; */
+"7Bx-QO-LeS.text" = "الوفت";
+
+/* Class = "UILabel"; text = "The data has been saved successfully"; ObjectID = "7Mv-ax-EtZ"; */
+"7Mv-ax-EtZ.text" = "تم حفظ البيانات بنجاح";
+
+/* Class = "UIButton"; normalTitle = "Ended"; ObjectID = "7NJ-Ja-ucz"; */
+"7NJ-Ja-ucz.normalTitle" = "المنتهية";
+
+/* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "7Q7-QX-ti4"; */
+"7Q7-QX-ti4.normalTitle" = "نقدي";
+
+/* Class = "UILabel"; text = "Photograph"; ObjectID = "7QJ-TY-DWm"; */
+"7QJ-TY-DWm.text" = "صورة شخصية";
+
+/* Class = "UILabel"; text = "Orders"; ObjectID = "7iW-hT-GOC"; */
+"7iW-hT-GOC.text" = "طلبات";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "7pb-Yv-btn"; */
+"7pb-Yv-btn.normalTitle" = "اضافة";
+
+/* Class = "UIButton"; normalTitle = "Payment of 25 Saudi riyals"; ObjectID = "808-cd-B5h"; */
+"808-cd-B5h.normalTitle" = "دفع 25 ريال سعودي";
+
+/* Class = "UILabel"; text = "Mada Card"; ObjectID = "8Ib-hE-FVI"; */
+"8Ib-hE-FVI.text" = "Mada بطاقة";
+
+/* Class = "UILabel"; text = "Display Language"; ObjectID = "8Ry-09-d4w"; */
+"8Ry-09-d4w.text" = "لغة العرض";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "8td-yC-Apc"; */
+"8td-yC-Apc.text" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "Bill number"; ObjectID = "8uk-Po-nwc"; */
+"8uk-Po-nwc.text" = "رقم الفاتوره";
+
+/* Class = "UILabel"; text = "Service seeker"; ObjectID = "8w6-l0-SGS"; */
+"8w6-l0-SGS.text" = "طالب الخدمة";
+
+/* Class = "UILabel"; text = "Save card data"; ObjectID = "8y3-s2-sYA"; */
+"8y3-s2-sYA.text" = "حفظ بيانات البطاقة";
+
+/* Class = "UIButton"; normalTitle = "Not delivery"; ObjectID = "9Np-5h-ccB"; */
+"9Np-5h-ccB.normalTitle" = "لا توصيل";
+
+/* Class = "UILabel"; text = "invoice number"; ObjectID = "AXS-E8-DMn"; */
+"AXS-E8-DMn.text" = "رقم الفاتورة";
+
+/* Class = "UILabel"; text = "Name Of The Delegate"; ObjectID = "B6d-9P-IcR"; */
+"B6d-9P-IcR.text" = "اسم المندوب";
+
+/* Class = "UILabel"; text = "Restore password!"; ObjectID = "BJO-ZH-4Mk"; */
+"BJO-ZH-4Mk.text" = "استعادة كلمة السر!";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "BMT-df-BjK"; */
+"BMT-df-BjK.text" = "الإعدادات";
+
+/* Class = "UILabel"; text = "Profile personly"; ObjectID = "Brr-37-Jul"; */
+"Brr-37-Jul.text" = "الملف الشخصي";
+
+/* Class = "UITextField"; placeholder = "  Email Address"; ObjectID = "C0V-y1-xPf"; */
+"C0V-y1-xPf.placeholder" = "عنوان البريد الإلكتروني";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "C4y-Pm-cnD"; */
+"C4y-Pm-cnD.text" = "اتصل بنا";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CGg-qF-a6X"; */
+"CGg-qF-a6X.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Log out"; ObjectID = "CP3-iJ-NX1"; */
+"CP3-iJ-NX1.normalTitle" = "تسجيل خروج";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "D2t-tx-342"; */
+"D2t-tx-342.text" = "اتصل بنا";
+
+/* Class = "UILabel"; text = "Privacy Policy And Usage"; ObjectID = "DJy-Hf-Yna"; */
+"DJy-Hf-Yna.text" = "سياسة الخصوصية والاستخدام";
+
+/* Class = "UILabel"; text = "Online Payment"; ObjectID = "DWU-Vs-vj5"; */
+"DWU-Vs-vj5.text" = "الدفع الالكتروني";
+
+
+/* Class = "UILabel"; text = "Service Seeker"; ObjectID = "EI6-7s-ujl"; */
+"EI6-7s-ujl.text" = "طالب الخدمة";
+
+
+/* Class = "UILabel"; text = "Register a new account by filling in the following information"; ObjectID = "Es3-IU-TdT"; */
+"Es3-IU-TdT.text" = "قم بتسجيل حساب جديد عن طريق ملء المعلومات التالية";
+
+/* Class = "UILabel"; text = "Delivery amount"; ObjectID = "FGi-c1-oiC"; */
+"FGi-c1-oiC.text" = "مبلغ التسليم";
+
+/* Class = "UILabel"; text = "Or Through"; ObjectID = "FbP-eu-Rmt"; */
+"FbP-eu-Rmt.text" = "أو من خلال";
+
+/* Class = "UITextField"; placeholder = "Write Here..."; ObjectID = "H95-0v-NqA"; */
+"H95-0v-NqA.placeholder" = "اكتب هنا...";
+
+/* Class = "UILabel"; text = "Bill Number"; ObjectID = "HAn-Da-LE1"; */
+"HAn-Da-LE1.text" = "رقم الفاتوره";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "IM7-0N-Hqp"; */
+"IM7-0N-Hqp.text" = "اسم االمستخدم";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "JNW-de-xyF"; */
+"JNW-de-xyF.text" = "الى";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "KG7-z1-Uex"; */
+"KG7-z1-Uex.normalTitle" = "يحفظ";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "KU4-kG-75L"; */
+"KU4-kG-75L.text" = "عنوان البريد الإلكتروني";
+
+/* Class = "UIButton"; normalTitle = "Terms of Privacy Policy and Use"; ObjectID = "KZD-l8-ofr"; */
+"KZD-l8-ofr.normalTitle" = "شروط سياسة الخصوصية والاستخدام";
+
+/* Class = "UILabel"; text = "A new member?"; ObjectID = "KuI-DL-0X5"; */
+"KuI-DL-0X5.text" = "عضو جديد؟";
+
+/* Class = "UIButton"; normalTitle = "Trace"; ObjectID = "LrT-b0-lJb"; */
+"LrT-b0-lJb.normalTitle" = "تتبع";
+
+/* Class = "UILabel"; text = "Fill in the username and email to recover your password"; ObjectID = "Lun-E9-Blz"; */
+"Lun-E9-Blz.text" = "أدخل اسم المستخدم والبريد الإلكتروني لاستعادة كلمة المرور الخاصة بك";
+
+/* Class = "UILabel"; text = "New Account"; ObjectID = "Lz3-fo-uDv"; */
+"Lz3-fo-uDv.text" = "حساب جديد";
+
+/* Class = "UILabel"; text = "Driver Name"; ObjectID = "MIk-k6-HwU"; */
+"MIk-k6-HwU.text" = "اسم السائق";
+
+/* Class = "UIButton"; normalTitle = "Start Now"; ObjectID = "MXF-h3-EXW"; */
+"MXF-h3-EXW.normalTitle" = "ابدأ الآن";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "MfF-Ke-d5W"; */
+"MfF-Ke-d5W.text" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Detect Location"; ObjectID = "Mm9-pP-5W5"; */
+"Mm9-pP-5W5.text" = "كشف الموقع";
+
+/* Class = "UILabel"; text = "Save card data"; ObjectID = "Moy-ud-3TQ"; */
+"Moy-ud-3TQ.text" = "حفظ بيانات البطاقة";
+
+/* Class = "UILabel"; text = "Are sure of the deleting process?"; ObjectID = "MsP-0c-IAe"; */
+"MsP-0c-IAe.text" = "هل أنت متأكد من عملية الحذف؟";
+
+/* Class = "UILabel"; text = "Notifications Sound"; ObjectID = "N2O-4f-Zq9"; */
+"N2O-4f-Zq9.text" = "صوت الإشعارات";
+
+/* Class = "UILabel"; text = "When you log in, you agree to all"; ObjectID = "NWZ-As-un3"; */
+"NWZ-As-un3.text" = "عندما تقوم بتسجيل الدخول ، فإنك توافق على كافة";
+
+/* Class = "UITabBarItem"; title = "Bills"; ObjectID = "Neu-yy-IFx"; */
+"Neu-yy-IFx.title" = "الفواتير";
+
+/* Class = "UILabel"; text = "Online Payment"; ObjectID = "NvO-H5-MqG"; */
+"NvO-H5-MqG.text" = "الدفع الالكتروني";
+
+/* Class = "UITabBarItem"; title = "Notification"; ObjectID = "O4P-2e-LfO"; */
+"O4P-2e-LfO.title" = "الإشعارات";
+
+/* Class = "UILabel"; text = "Ratings"; ObjectID = "O8f-ME-x7i"; */
+"O8f-ME-x7i.text" = "التقييمات";
+
+/* Class = "UILabel"; text = "Driver Name"; ObjectID = "Pih-PU-Auc"; */
+"Pih-PU-Auc.text" = "اسم السائق";
+
+/* Class = "UIButton"; normalTitle = "Paid"; ObjectID = "Pr9-8B-5D5"; */
+"Pr9-8B-5D5.normalTitle" = "المدفوعة";
+
+/* Class = "UILabel"; text = "Full Name"; ObjectID = "Pry-Is-fDs"; */
+"Pry-Is-fDs.text" = "الاسم بالكامل";
+
+/* Class = "UILabel"; text = "last message"; ObjectID = "QSk-BM-a9x"; */
+"QSk-BM-a9x.text" = "اخر رسالة";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "Qgd-gt-rhe"; */
+"Qgd-gt-rhe.text" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "Rba-3w-Ml5"; */
+"Rba-3w-Ml5.text" = "عنوان البريد الإلكتروني";
+
+/* Class = "UITextField"; placeholder = "  Card Number"; ObjectID = "Ren-1d-FBy"; */
+"Ren-1d-FBy.placeholder" = "رقم البطاقة";
+
+/* Class = "UILabel"; text = "Log in using your username and password"; ObjectID = "SB3-8n-Ucz"; */
+"SB3-8n-Ucz.text" = "تسجيل الدخول باستخدام اسم المستخدم وكلمة المرور الخاصة بك";
+
+/* Class = "UILabel"; text = "Full Name"; ObjectID = "SEf-P6-qQE"; */
+"SEf-P6-qQE.text" = "الاسم بالكامل";
+
+/* Class = "UILabel"; text = "Driver Rating Adjustment"; ObjectID = "Sgd-mB-xlU"; */
+"Sgd-mB-xlU.text" = "تعديل تقييم السائق";
+
+/* Class = "UILabel"; text = "Choose the electronic payment mechanism"; ObjectID = "Sts-dJ-uR8"; */
+"Sts-dJ-uR8.text" = "اختر آلية الدفع الإلكتروني";
+
+
+
+/* Class = "UILabel"; text = "invoice number"; ObjectID = "Tbg-AH-q03"; */
+"Tbg-AH-q03.text" = "رقم الفاتورة";
+
+/* Class = "UITabBarItem"; title = "Messages"; ObjectID = "UFn-tl-sVP"; */
+"UFn-tl-sVP.title" = "رسائل";
+
+/* Class = "UILabel"; text = "Privacy Policy and Usage"; ObjectID = "Uq2-I4-7BQ"; */
+"Uq2-I4-7BQ.text" = "سياسة الخصوصية والاستخدام";
+
+/* Class = "UILabel"; text = "Profile Personly"; ObjectID = "UrU-d7-53j"; */
+"UrU-d7-53j.text" = "الملف الشخصي";
+
+/* Class = "UILabel"; text = "Welcome Back!"; ObjectID = "VtR-QX-tF9"; */
+"VtR-QX-tF9.text" = "مرحبا بعودتك!";
+
+/* Class = "UILabel"; text = "Welcome to join us!"; ObjectID = "Wbh-Ct-fC1"; */
+"Wbh-Ct-fC1.text" = "مرحبا بكم في الانضمام إلينا!";
+
+/* Class = "UITextField"; placeholder = "Write Here..."; ObjectID = "WvU-no-T02"; */
+"WvU-no-T02.placeholder" = "اكتب هنا...";
+
+/* Class = "UIButton"; normalTitle = "Saving data"; ObjectID = "XHM-oQ-5iB"; */
+"XHM-oQ-5iB.normalTitle" = "حفظ البيانات";
+
+/* Class = "UILabel"; text = "Service Seeker Name"; ObjectID = "XhD-yC-8sy"; */
+"XhD-yC-8sy.text" = "اسم طالب الخدمة";
+
+/* Class = "UILabel"; text = "Fill in the following information"; ObjectID = "YV2-vP-EEC"; */
+"YV2-vP-EEC.text" = "قم بتعبئة البيانات التالية";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "YVI-Zu-uFh"; */
+"YVI-Zu-uFh.text" = "كلمه السر";
+
+/* Class = "UILabel"; text = "New Card"; ObjectID = "Yh9-6m-M2e"; */
+"Yh9-6m-M2e.text" = "بطاقة جديدة";
+
+/* Class = "UIButton"; normalTitle = "Bank"; ObjectID = "YpW-KN-rFa"; */
+"YpW-KN-rFa.normalTitle" = "بنك";
+
+/* Class = "UITextField"; placeholder = "  Write here..."; ObjectID = "Z9f-Qi-mVK"; */
+"Z9f-Qi-mVK.placeholder" = "اكتب هنا...";
+
+/* Class = "UILabel"; text = "When you log in, you agree to all"; ObjectID = "Ze4-s1-jtb"; */
+"Ze4-s1-jtb.text" = "عندما تقوم بتسجيل الدخول ، فإنك توافق على كافة";
+
+/* Class = "UILabel"; text = "Who We Are"; ObjectID = "aJ1-zw-Xyr"; */
+"aJ1-zw-Xyr.text" = "من نحن";
+
+/* Class = "UILabel"; text = "Pay Pal Card"; ObjectID = "adI-ga-YRI"; */
+"adI-ga-YRI.text" = "بطاقة باي بال";
+
+/* Class = "UILabel"; text = "Order Location"; ObjectID = "agX-so-pf3"; */
+"agX-so-pf3.text" = "موقع الطلب";
+
+"atb-8O-UoB.text" = "يتم تحميل الفيديو...";
+
+"Cnk-52-5AK.text" = "يتم تحميل الفيديو...";
+/* Class = "UILabel"; text = "A representative has a current request, you cannot contact him now"; ObjectID = "bI0-C4-8NN"; */
+"bI0-C4-8NN.text" = "الممثل لديه طلب حالي ، لا يمكنك الاتصال به الآن";
+
+/* Class = "UIButton"; normalTitle = "Current"; ObjectID = "bTs-HX-fKq"; */
+"bTs-HX-fKq.normalTitle" = "الحالية";
+
+/* Class = "UIButton"; normalTitle = "Copy Link"; ObjectID = "c9f-jP-S2j"; */
+"c9f-jP-S2j.normalTitle" = "نسخ الرابط";
+
+/* Class = "UIButton"; normalTitle = "Start here"; ObjectID = "cWH-TG-KJc"; */
+"cWH-TG-KJc.normalTitle" = "أبدأ هنا";
+
+/* Class = "UITextField"; placeholder = "  Email Address"; ObjectID = "cZ5-ww-gVt"; */
+"cZ5-ww-gVt.placeholder" = "عنوان البريد الإلكتروني";
+
+/* Class = "UIButton"; normalTitle = "Shops"; ObjectID = "dQe-ns-aYD"; */
+"dQe-ns-aYD.normalTitle" = "محلات";
+
+/* Class = "UILabel"; text = "You can contact us by sending a text message, and we will reply to you as soon as possible"; ObjectID = "dUQ-Rl-Gyn"; */
+"dUQ-Rl-Gyn.text" = "يمكنك الاتصال بنا عن طريق إرسال رسالة نصية وسنقوم بالرد عليك في أقرب وقت ممكن";
+
+/* Class = "UILabel"; text = "Bill Number"; ObjectID = "dtE-ww-Eyg"; */
+"dtE-ww-Eyg.text" = "رقم الفاتوره";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "eJG-F5-3jA"; */
+"eJG-F5-3jA.text" = "الإعدادات";
+
+/* Class = "UILabel"; text = "time"; ObjectID = "efq-aX-fpv"; */
+"efq-aX-fpv.text" = "وقت";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "fAm-J1-svI"; */
+"fAm-J1-svI.text" = "الى";
+
+/* Class = "UILabel"; text = "Master Card"; ObjectID = "fG0-3o-z7r"; */
+"fG0-3o-z7r.text" = "بطاقة ماستر بطاقة ائتمان";
+
+/* Class = "UILabel"; text = "Notice of completion of delivery"; ObjectID = "fTm-L2-Aod"; */
+"fTm-L2-Aod.text" = "إشعار إتمام التسليم";
+
+/* Class = "UILabel"; text = "Detect Location"; ObjectID = "fhU-2f-Tza"; */
+"fhU-2f-Tza.text" = "تحديد الموقع";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "g8f-bc-4eu"; */
+"g8f-bc-4eu.text" = "اسم االمستخدم";
+
+/* Class = "UILabel"; text = "Driver:"; ObjectID = "gFr-uS-6ZX"; */
+"gFr-uS-6ZX.text" = "سائق:";
+
+/* Class = "UILabel"; text = "Bills Details"; ObjectID = "gOv-xD-lxi"; */
+"gOv-xD-lxi.text" = "تفاصيل الفواتير:";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "gYP-im-nvp"; */
+"gYP-im-nvp.text" = "زمن";
+
+/* Class = "UIButton"; normalTitle = "Forget Password?"; ObjectID = "geK-6n-zAX"; */
+"geK-6n-zAX.normalTitle" = "هل نسيت كلمة السر؟";
+
+/* Class = "UILabel"; text = "Bills"; ObjectID = "ggk-ED-DYV"; */
+"ggk-ED-DYV.text" = "الفواتير";
+
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "h5d-Zy-ZxQ"; */
+"h5d-Zy-ZxQ.text" = "اسم االمستخدم";
+
+/* Class = "UIButton"; normalTitle = "Canceled"; ObjectID = "hTj-bD-l94"; */
+"hTj-bD-l94.normalTitle" = "الملغية";
+
+/* Class = "UILabel"; text = "Ask for the closest"; ObjectID = "hg6-Oy-ZNB"; */
+"hg6-Oy-ZNB.text" = "اطلب الأقرب";
+
+/* Class = "UILabel"; text = "Driver rating"; ObjectID = "hrR-eI-WMf"; */
+"hrR-eI-WMf.text" = "تصنيف السائق";
+
+/* Class = "UILabel"; text = "Delivery amount"; ObjectID = "i8e-Wu-KXv"; */
+"i8e-Wu-KXv.text" = "مبلغ التسليم";
+
+/* Class = "UILabel"; text = "Who Us"; ObjectID = "iDh-4A-lvt"; */
+"iDh-4A-lvt.text" = "من نحن";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "iNY-NH-mw8"; */
+"iNY-NH-mw8.placeholder" = "بحث";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "j3o-jD-Hmp"; */
+"j3o-jD-Hmp.text" = "رسائل";
+
+/* Class = "UILabel"; text = "STC Pay Card"; ObjectID = "jTs-Ur-yxx"; */
+"jTs-Ur-yxx.text" = "بطاقة STC Pay";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "jVt-ze-Jjn"; */
+"jVt-ze-Jjn.normalTitle" = "يلغي";
+
+/* Class = "UILabel"; text = "The driver's name"; ObjectID = "jbj-CC-u8Y"; */
+"jbj-CC-u8Y.text" = "اسم السائق";
+
+/* Class = "UITextField"; placeholder = "  Password"; ObjectID = "jfD-hg-bGY"; */
+"jfD-hg-bGY.placeholder" = "كلمه السر";
+
+/* Class = "UILabel"; text = "Payment Mechanism"; ObjectID = "jgA-Pc-zgn"; */
+"jgA-Pc-zgn.text" = "آلية الدفع";
+
+/* Class = "UITextField"; placeholder = "  CVV"; ObjectID = "kMi-JY-ZPZ"; */
+"kMi-JY-ZPZ.placeholder" = "CVV";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "kR5-gh-gwc"; */
+"kR5-gh-gwc.normalTitle" = "تحديث";
+
+/* Class = "UILabel"; text = "Online Payment"; ObjectID = "kYK-GO-D1a"; */
+"kYK-GO-D1a.text" = "الدفع الالكتروني";
+
+/* Class = "UIButton"; normalTitle = "Delete from the list"; ObjectID = "m7p-P8-RIG"; */
+"m7p-P8-RIG.normalTitle" = "احذف من القائمة";
+
+/* Class = "UILabel"; text = "Or Login using"; ObjectID = "mbN-GI-Yin"; */
+"mbN-GI-Yin.text" = "أو تسجيل الدخول باستخدام";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "nCE-5t-2mP"; */
+"nCE-5t-2mP.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Payment Amount (SR)"; ObjectID = "nLG-eh-7YO"; */
+"nLG-eh-7YO.text" = "مبلغ الدفع (ريال سعودي)";
+
+/* Class = "UIButton"; normalTitle = "Video"; ObjectID = "nTz-Vm-TCV"; */
+"nTz-Vm-TCV.normalTitle" = "فيديو";
+
+/* Class = "UIButton"; normalTitle = "Delivered"; ObjectID = "naG-xE-h7e"; */
+"naG-xE-h7e.normalTitle" = "تم التوصيل";
+
+/* Class = "UILabel"; text = "Order Location"; ObjectID = "nuB-GR-QSZ"; */
+"nuB-GR-QSZ.text" = "موقع الطلب";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "nwZ-A8-MfX"; */
+"nwZ-A8-MfX.text" = "الى";
+
+/* Class = "UILabel"; text = "Rating"; ObjectID = "nxK-CU-NDa"; */
+"nxK-CU-NDa.text" = "تقييم";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "oNg-HF-8SG"; */
+"oNg-HF-8SG.normalTitle" = "يتخطى";
+
+/* Class = "UILabel"; text = "Driver Rating"; ObjectID = "ohb-xX-0QB"; */
+"ohb-xX-0QB.text" = "تقييم السائق";
+
+/* Class = "UIButton"; normalTitle = "Contact"; ObjectID = "oqv-vK-rLS"; */
+"oqv-vK-rLS.normalTitle" = "اتصال";
+
+/* Class = "UITextField"; placeholder = "  User Name"; ObjectID = "oxp-Zx-dak"; */
+"oxp-Zx-dak.placeholder" = "اسم االمستخدم";
+
+/* Class = "UIButton"; normalTitle = "Photos"; ObjectID = "p9v-mI-NA3"; */
+"p9v-mI-NA3.normalTitle" = "الصور";
+
+/* Class = "UILabel"; text = "Communication in emergencies through direct WhatsApp"; ObjectID = "q3C-a5-u9Z"; */
+"q3C-a5-u9Z.text" = "التواصل في حالات الطوارئ من خلال WhatsApp المباشر";
+
+/* Class = "UILabel"; text = "from"; ObjectID = "qhj-Td-v2t"; */
+"qhj-Td-v2t.text" = "من";
+
+/* Class = "UILabel"; text = "Service Seeker Name"; ObjectID = "qyw-sC-jql"; */
+"qyw-sC-jql.text" = "اسم طالب الخدمة";
+
+/* Class = "UILabel"; text = "Photograph"; ObjectID = "qz6-iY-op8"; */
+"qz6-iY-op8.text" = "صورة شخصية";
+
+/* Class = "UILabel"; text = "Bill Number"; ObjectID = "r8R-bk-X3M"; */
+"r8R-bk-X3M.text" = "رقم الفاتوره";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "rOq-Zq-iXz"; */
+"rOq-Zq-iXz.text" = "هل لديك حساب؟";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "sHw-V4-8Yj"; */
+"sHw-V4-8Yj.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "sUG-z0-E2g"; */
+"sUG-z0-E2g.text" = "رسائل";
+
+/* Class = "UILabel"; text = "Bill Details"; ObjectID = "sg9-XT-ydK"; */
+"sg9-XT-ydK.text" = "تفاصيل الفاتورة";
+
+/* Class = "UILabel"; text = "user name"; ObjectID = "shi-jW-pAg"; */
+"shi-jW-pAg.text" = "اسم االمستخدم";
+
+/* Class = "UILabel"; text = "Driver Name"; ObjectID = "tP7-VI-hdd"; */
+"tP7-VI-hdd.text" = "اسم السائق";
+
+/* Class = "UILabel"; text = "Payment Amount (SR)"; ObjectID = "u4F-5G-JRr"; */
+"u4F-5G-JRr.text" = "مبلغ الدفع (ريال سعودي)";
+
+/* Class = "UILabel"; text = "driver_name"; ObjectID = "ukG-py-NNG"; */
+"ukG-py-NNG.text" = "اسم السائق";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "urP-sH-nnK"; */
+"urP-sH-nnK.title" = "الرئيسية";
+
+/* Class = "UILabel"; text = "Online Payment"; ObjectID = "w6y-0V-NUb"; */
+"w6y-0V-NUb.text" = "الدفع الالكتروني";
+
+/* Class = "UILabel"; text = "Delivery Location"; ObjectID = "wCh-ur-nBn"; */
+"wCh-ur-nBn.text" = "موقع التسليم";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "wQS-7G-uPW"; */
+"wQS-7G-uPW.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Delete"; ObjectID = "wfM-w6-lgT"; */
+"wfM-w6-lgT.normalTitle" = "حذف";
+
+/* Class = "UILabel"; text = "Share The App"; ObjectID = "xoe-r5-Dzc"; */
+"xoe-r5-Dzc.text" = "شارك التطبيق";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "yNU-GO-fJf"; */
+"yNU-GO-fJf.normalTitle" = "الغاء";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "zOi-Oy-Dec"; */
+"zOi-Oy-Dec.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Productive Families"; ObjectID = "zeX-AK-DRv"; */
+"zeX-AK-DRv.normalTitle" = "العائلات المنتجة";

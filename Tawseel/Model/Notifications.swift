@@ -8,7 +8,9 @@
 import Foundation
 
 struct Notifications {
+    var id:Int
     var isNew:Bool
     var text:String
-    var time:String
+    var time:Date
+    var aciton: ()-> Void
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 struct NotificationInfo {
-    var date:String
+    var date:Date
     var notification:[Notifications]
 }

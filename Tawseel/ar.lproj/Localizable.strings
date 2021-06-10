@@ -1,0 +1,82 @@
+/* 
+  Localizable.strings
+  Tawseel
+
+  Created by macbook on 15/03/2021.
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Arabic <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*/
+
+
+"Cancel" = "إلغاء";
+"Remove Current Picture" = "إزالة الصورة الحالية";
+"Take A Picture By The Camera" = "التقط صورة بالكاميرا";
+"Select From Galary" = "اختر من المعرض";
+"Select You Choose" = "حدد اختيارك";
+"Select the image from your profile" = "حدد الصورة من ملف التعريف الخاص بك";
+"location not determined" = "الموقع غير محدد";
+"Error" = "خطأ";
+"You must specify your location in the map" = "يجب عليك تحديد موقعك على الخريطة";
+"Successfully Updated" = "تم التحديث بنجاح";
+"The data has been updated successfully" = "تم تحديث البيانات بنجاح";
+"You are already on Arabic" = "أنت بالفعل على اللغة العربية";
+"You are already on English" = "أنت بالفعل في اللغة الإنجليزية";
+"The Message" = "الرسالة";
+"There is an error in your login with facebook process" = "هناك خطأ في تسجيل الدخول الخاص بك بإستخدام الفيسبوك";
+"Ask for the closest" = "اطلب الأقرب";
+"Ask for the closest_Content" = "يساعدك تطبيق توصيل على اختيار أقرب موظف تسويق إلى موقع طلبك من خلال عرضهم على الخريطة";
+"Electronic payment" = "الدفع الإلكتروني";
+"Electronic payment_Content"= "يوفر لك التطبيق مجموعة متنوعة من خيارات الدفع الإلكتروني مثل Visa Card و Paypal و Master Card مع إمكانية الدفع نقدًا";
+"join us" = "انضم إلينا";
+"join us_Content" = "إذا كنت تملك سيارة يمكنك الانضمام إلينا والعمل كمندوب توصيل ضمن فريق متميز من خلال تعبئة بيانات التسجيل في الطلب";
+"Warning" = "تحذير";
+"Warning_Content" = "لن تتمكن من رؤية موقعك على الخريطة ، يجب عليك تنشيط موقعك في الإعدادات";
+"There are no drivers" = "لا يوجد سائقين";
+"There are no drivers_Content" = "لا يوجد سائقون حول المسافة المحددة وبهذا التقييم";
+"The delivery person is not available right now" = "شخص التوصيل غير متوفر الآن";
+"The delivery representative has a current request, you cannot contact him now" = "مندوب التوصيل لديه طلب حالي ، لا يمكنك الاتصال به الآن";
+"There are no drivers for this name" = "لا توجد برامج تشغيل لهذا الاسم";
+"SR" = "ريال سعودى";
+"The data has been saved successfully" = "تم حفظ البيانات بنجاح" ;
+"You must specify your location in the map" = "يجب عليك تحديد موقعك على الخريطة" ;
+"Location" = "الموقع";
+"An error occurred while getting the driver's path" = "حدث خطأ أثناء الحصول على مسار السائق";
+"Sorry!!" = "عذرآ!!";
+"The user has not signed in before or they have since signed out." = "لم يقم المستخدم بتسجيل الدخول من قبل أو قام بتسجيل الخروج منذ ذلك الحين.";
+"Sorry,Server Error" = "عذرآ خطأ في الخادم";
+"Make sure you have internet" = "تأكد من وجود الانترنت";
+"Make sure the location feature is enabled" = "تأكد من تفعيل خاصية الموقع";
+"A new password has been sent to your email" = "تم إرسال كلمة مرور جديدة إلى بريدك الإلكتروني";
+"There is an error while you are signing in with apple" = "حدث خطأ أثناء تسجيل الدخول باستخدام حساب آبل";
+"WhatsApp Not Available App" = "تطبيق واتساب غير متوفر لديك";
+"Successful Send" = "تم الإرسال بنجاح";
+"The message has been sent successfully" = "تم إرسال الرسالة بنجاح";
+"New Bill\nNumber: " = "فاتورة جديدة\nرقم: ";
+"Notice of delivery request\nFor order number: " = "إشعار طلب التسليم\nلرقم الطلب: ";
+"The request has been delivered\nNumber: " = "تم تسليم الطلب\nالرقم: ";
+"The messaging request for " = "طلب المراسلة ل ";
+" request has been confirmed by the delivery representative" = "تم تأكيده من قبل مندوب التوصيل";
+"The messaging request for the " = "طلب المراسلة الخاص بـ";
+" request was rejected by the delivery person" = "تم رفضه من قبل شخص التوصيل";
+"The driver " = "السائق ";
+" has been rated." = " تم تقييمه.";
+"Bill No. " = "فاتورة رفم ";
+" was paid" = "تم دفعها";
+" has been canceled." = "تم إلغاؤها";
+"You Should Choose Type Of Service" = "يجب عليك اختيار نوع الخدمة";
+"Taxi" = "سيارة اجره";
+"Delivery of restaurants and other orders" = "توصيل طلبات المطاعم وغيرها من الطلبات";
+"Delivery of a gift in another city" = "توصيل هدية في مدينة أخرى";
+"Delivery of shipments and goods" = "تسليم الشحنات والبضائع";
+"Other" = "آخرى";
+"You Should Select Payment Method" = "يجب عليك تحديد طريقة الدفع";
+"Click on the green icon to contact the driver" = "قم بالضغط على الأيقونة الخضراء لتواصل مع المندوب";
+"Home" = "الرئيسية";
+"There is an error while you are recording audio" = "حدث خطأ أثناء تسجيل الصوت";
+"There are no permissions for voice message" = "لا توجد أذونات للرسائل الصوتية";
+"There is an error for enabling voice messages" = "هناك خطأ في تمكين الرسائل الصوتية";
+"Unavailable at the moment" = "غير متوفر حاليا";
+"Voice Message" = "رسالة صوتية";
+"Photo" = "صورة";
+"Video" = "فيديو";
+"Location" = "موقع";
+"Contact" = "جهة اتصال";

@@ -1,7 +1,81 @@
 /* 
-  Localizable.strings
-  Tawseel
+ Localizable.strings
+ Tawseel
+ 
+ Created by macbook on 15/03/2021.
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> English <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ */
 
-  Created by macbook on 15/03/2021.
-  
-*/
+"Cancel" = "Cancel";
+"Remove Current Picture" = "Remove Current Picture";
+"Take A Picture By The Camera" = "Take A Picture By The Camera";
+"Select From Galary" = "Select From Galary";
+"Select You Choose" = "Select You Choose";
+"Select the image from your profile" = "Select the image from your profile";
+"location not determined" = "location not determined";
+"Error" = "Error";
+"You must specify your location in the map" = "You must specify your location in the map";
+"Successfully Updated" = "Successfully Updated";
+"The data has been updated successfully" = "The data has been updated successfully";
+"You are already on Arabic" = "You are already on Arabic";
+"You are already on English" = "You are already on English";
+"The Message" = "The Message";
+"There is an error in your login with facebook process" = "There is an error in your login with facebook process";
+"Ask for the closest" = "Ask for the closest";
+"Ask for the closest_Content" = "Tawseel application helps you to choose the closest marketing personnel to the location of your order by displaying them on the map";
+"Electronic payment" = "Electronic payment";
+"Electronic payment_Content"= "The application provides you with a variety of electronic payment options such as, Visa Card, Paypal and Master Card with the ability to pay in cash";
+"join us" = "join us";
+"join us_Content" = "If you own a car, you can join us and work as a delivery representative within a distinguished team by filling in the registration data in the application";
+"Warning" = "Warning";
+"Warning_Content" = "You will not be able to see your location on the map, you must activate your location in the settings";
+"There are no drivers" = "There are no drivers";
+"There are no drivers_Content" = "There are no drivers around the distance set and with this rating";
+"The delivery person is not available right now" = "The delivery person is not available right now";
+"The delivery representative has a current request, you cannot contact him now" = "The delivery representative has a current request, you cannot contact him now";
+"There are no drivers for this name" = "There are no drivers for this name";
+"SR" = "SR";
+"The data has been saved successfully" = "The data has been saved successfully" ;
+"You must specify your location in the map" = "You must specify your location in the map" ;
+"Location" = "Location";
+"An error occurred while getting the driver's path" = "An error occurred while getting the driver's path";
+"Sorry!!" = "Sorry!!";
+"The user has not signed in before or they have since signed out." = "The user has not signed in before or they have since signed out.";
+"Sorry,Server Error" = "Sorry,Server Error";
+"Make sure you have internet" = "Make sure you have internet";
+"Make sure the location feature is enabled" = "Make sure the location feature is enabled";
+"A new password has been sent to your email" = "A new password has been sent to your email";
+"There is an error while you are signing in with apple" = "There is an error while you are signing in with apple account";
+"WhatsApp Not Avaliable App" = "WhatsApp Not Available App";
+"Successful Send" = "Successful Send";
+"The message has been sent successfully" = "The message has been sent successfully";
+"New Bill\nNumber: " = "New Bill\nNumber: ";
+"Notice of delivery request\nFor order number: " = "Notice of delivery request\nFor order number: ";
+"The request has been delivered\nNumber: " = "The request has been delivered\nNumber: ";
+"The messaging request for " = "The messaging request for ";
+" request has been confirmed by the delivery representative" = " request has been confirmed by the delivery representative";
+"The messaging request for the " = "The messaging request for the ";
+" request was rejected by the delivery person" = " request was rejected by the delivery person";
+"The driver " = "The driver ";
+" has been rated." = " has been rated.";
+"Bill No. " = "Bill No. ";
+" was paid" = " was paid";
+" has been canceled." = " has been canceled.";
+"You Should Choose Type Of Service" = "You Should Choose Type Of Service";
+"Taxi" = "Taxi";
+"Delivery of restaurants and other orders" = "Delivery of restaurants and other orders";
+"Delivery of a gift in another city" = "Delivery of a gift in another city";
+"Delivery of shipments and goods" = "Delivery of shipments and goods";
+"Other" = "Other";
+"You Should Select Payment Method" = "You Should Select Payment Method";
+"Click on the green icon to contact the driver" = "Click on the green icon to contact the driver";
+"Home" = "Home";
+"There is an error while you are recording audio" = "There is an error while you are recording audio";
+"There are no permissions for voice message" = "There are no permissions for voice message";
+"There is an error for enabling voice messages" = "There is an error for enabling voice messages";
+"Unavailable at the moment" = "Unavailable at the moment";
+"Voice Message" = "Voice Message";
+"Photo" = "Photo";
+"Video" = "Video";
+"Location" = "Location";
+"Contact" = "Contact";

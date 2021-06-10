@@ -13,13 +13,14 @@ class MainTabBarViewController: UITabBarController {
         initlization()
     }
     
-    private func initlization() {
-        setUpTabBar()
-    }
     
-    private func setUpTabBar() {
+    private func initlization() {
         navigationController?.navigationBar.isHidden = true
         selectedIndex = 2
+        
+        
     }
+
+    
     
 }
